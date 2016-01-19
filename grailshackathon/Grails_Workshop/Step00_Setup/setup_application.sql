@@ -272,7 +272,7 @@ begin
    end if;
 end COMMENTS_COMMENT_ID_TRIGGER;
 /
-ALTER TRIGGER "COMMENTS_COMMENT_ID_TRIGGER" ENABLE;
+ALTER TRIGGER "COMMENTS_COMMENT_ID_TRIGGER" DISABLE;
 --------------------------------------------------------
 --  DDL for Trigger ITEMS_ITEM_ID_TRIGGER
 --------------------------------------------------------
@@ -287,7 +287,7 @@ begin
    end if;
 end ITEMS_ITEM_ID_TRIGGER;
 /
-ALTER TRIGGER "ITEMS_ITEM_ID_TRIGGER" ENABLE;
+ALTER TRIGGER "ITEMS_ITEM_ID_TRIGGER" DISABLE;
 --------------------------------------------------------
 --  DDL for Trigger OFFERS_OFFER_ID_TRIGGER
 --------------------------------------------------------
@@ -302,7 +302,7 @@ begin
    end if;
 end OFFERS_OFFER_ID_TRIGGER;
 /
-ALTER TRIGGER "OFFERS_OFFER_ID_TRIGGER" ENABLE;
+ALTER TRIGGER "OFFERS_OFFER_ID_TRIGGER" DISABLE;
 --------------------------------------------------------
 --  DDL for Trigger USERS_USER_ID_TRIGGER
 --------------------------------------------------------
@@ -317,4 +317,4 @@ begin
    end if;
 end users_user_id_trigger;
 /
-ALTER TRIGGER "USERS_USER_ID_TRIGGER" ENABLE;
+ALTER TRIGGER "USERS_USER_ID_TRIGGER" DISABLE;
