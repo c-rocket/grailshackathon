@@ -2,8 +2,8 @@
 	<description>Simple build file to setup properties for project steps</description>
 
 	<property name="setupFldr" location="." />
-	<property name="step01" location="../Step01_Hello_World/Step01_Hello_World" />
-	<property name="step02" location="../Step02_DB_and_API/Step02_DB_and_API" />
+	<property name="step01" location="../Step01_Hello_World" />
+	<property name="step02" location="../Step02_DB_and_API" />
 	<property name="step03" location="../Step03_APIs" />
 	<property name="step04" location="../Step04_Angular" />
 	<property name="step05" location="../Step05_Menu_and_Navigation" />
