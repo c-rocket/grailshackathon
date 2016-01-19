@@ -1,4 +1,4 @@
-package step02_db_and_api
+package com.oracle.grailshackathon
 
 import grails.test.spock.IntegrationSpec
 import grails.transaction.Rollback;

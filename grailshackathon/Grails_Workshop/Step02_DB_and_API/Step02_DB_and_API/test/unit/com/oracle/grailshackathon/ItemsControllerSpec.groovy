@@ -1,4 +1,7 @@
-package step02_db_and_api
+package com.oracle.grailshackathon
+
+import com.oracle.grailshackathon.Item;
+import com.oracle.grailshackathon.ItemsController;
 
 import spock.lang.Specification
 
