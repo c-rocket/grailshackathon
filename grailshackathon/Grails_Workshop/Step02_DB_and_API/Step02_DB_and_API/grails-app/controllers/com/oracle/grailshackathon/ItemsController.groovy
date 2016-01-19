@@ -6,14 +6,14 @@ class ItemsController {
 	def items(){
 		render Item.findAll().collect{
 			[
-				id:it.id,
-				postedBy:it.postedBy,
-				title:it.title,
-				postDate:it.postDate,
-				price:it.price,
-				boughtBy:it.boughtBy,
-				status:it.status,
-				description:it.description,
+				ITEM_ID:it.id,
+				ITEM_TITLE:it.title,
+				ITEM_DESC:it.description,
+				ITEM_POST_DATE:it.postDate,
+				ITEM_POSTED_BY:it.postedBy,
+				ITEM_BOUGHT_BY:it.boughtBy,
+				ITEM_PRICE:it.price,
+				ITEM_STATUS:it.status
 			]
 		} as JSON
 	}

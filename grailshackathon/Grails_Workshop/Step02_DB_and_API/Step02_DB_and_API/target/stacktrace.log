@@ -3375,3 +3375,81 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
 	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
 	at java.lang.Thread.run(Thread.java:745)
+2016-01-19 16:44:52,731 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-19 16:44:52,753 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-19 16:44:52,763 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-19 16:44:52,764 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-19 16:44:52,778 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-19 16:44:52,778 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{"(ITEM_ID)":5,"(ITEM_TITLE)":("tes)t( t)itle"(,"ITEM_DESC"):"(DESCRIPTION)","(ITEM_POST_)D(ATE)":null,"(ITEM_POSTED_BY)":(2-),"(ITEM_BOUGHT_)B(Y)":1,"(ITEM_PRI-)C(E":15-),"(ITEM_STATUS)":"(---)C(LOSED--)"}]
+|        |    [{"(id-----)":5,"(postedBy--)":(2,"-)t(--)itle"(------------):"(test title-)","(post------)D(ate)":null,"(price---------)":(15),"(bought------)B(y)":1,"(status":")C(LOSED"),"(description)":"(DES)C(RIPTION)"}]
+|        [{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)

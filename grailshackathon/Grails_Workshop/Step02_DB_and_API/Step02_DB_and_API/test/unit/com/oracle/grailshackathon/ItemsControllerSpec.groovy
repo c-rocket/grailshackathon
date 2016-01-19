@@ -25,6 +25,6 @@ class ItemsControllerSpec extends Specification {
 		controller.items()
 
 		then:
-		response.text == '[{"id":5,"postedBy":2,"title":"test title","postDate":null,"price":15,"boughtBy":1,"status":"CLOSED","description":"DESCRIPTION"}]'
+		response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
 	}
 }
