@@ -1,0 +1,10 @@
+Testsuite: com.oracle.grailshackathon.ItemsControllerSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 12.485 sec
+------------- Standard Output ---------------
+--Output from test hello--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test hello--
+------------- ---------------- ---------------
+
+Testcase: test hello took 12.39 sec

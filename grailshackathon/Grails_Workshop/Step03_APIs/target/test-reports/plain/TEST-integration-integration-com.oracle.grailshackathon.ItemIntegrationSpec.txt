@@ -1,0 +1,25 @@
+Testsuite: com.oracle.grailshackathon.ItemIntegrationSpec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.262 sec
+------------- Standard Output ---------------
+--Output from test that items are returned--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test that items are returned--
+------------- ---------------- ---------------
+
+Testcase: test that items are returned took 0.209 sec
+	FAILED
+Condition not satisfied:
+
+items.size() > 0
+|     |      |
+[]    0      false
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+items.size() > 0
+|     |      |
+[]    0      false
+
+	at com.oracle.grailshackathon.ItemIntegrationSpec.test that items are returned(ItemIntegrationSpec.groovy:21)
+

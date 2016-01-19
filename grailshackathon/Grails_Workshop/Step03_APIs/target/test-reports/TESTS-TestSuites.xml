@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="CCROCKET-LAP" id="0" name="ItemIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.262" timestamp="2016-01-19T23:49:30">
+      <properties />
+
+      <testcase classname="com.oracle.grailshackathon.ItemIntegrationSpec" name="test that items are returned" time="0.261">
+          <failure message="Condition not satisfied:&#xa;&#xa;items.size() &gt; 0&#xa;|     |      |&#xa;[]    0      false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+items.size() &gt; 0
+|     |      |
+[]    0      false
+
+	at com.oracle.grailshackathon.ItemIntegrationSpec.test that items are returned(ItemIntegrationSpec.groovy:21)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test that items are returned--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test that items are returned--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="1" name="ItemsControllerSpec" package="com.oracle.grailshackathon" tests="1" time="12.485" timestamp="2016-01-19T23:49:01">
+      <properties />
+
+      <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test hello" time="12.39" />
+
+      <system-out><![CDATA[--Output from test hello--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test hello--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

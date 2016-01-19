@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemsControllerSpec" tests="1" time="11.025" timestamp="2016-01-19T23:44:41">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test hello" time="10.923">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.text == &apos;[{&quot;id&quot;:5,&quot;postedBy&quot;:2,&quot;title&quot;:&quot;test title&quot;,&quot;postDate&quot;:null,&quot;price&quot;:15,&quot;boughtBy&quot;:1,&quot;status&quot;:&quot;CLOSED&quot;,&quot;description&quot;:&quot;DESCRIPTION&quot;}]&apos;&#xa;|        |    |&#xa;|        |    false&#xa;|        |    124 differences (25% similarity)&#xa;|        |    [{&quot;(ITEM_ID)&quot;:5,&quot;(ITEM_TITLE)&quot;:(&quot;tes)t( t)itle&quot;(,&quot;ITEM_DESC&quot;):&quot;(DESCRIPTION)&quot;,&quot;(ITEM_POST_)D(ATE)&quot;:null,&quot;(ITEM_POSTED_BY)&quot;:(2-),&quot;(ITEM_BOUGHT_)B(Y)&quot;:1,&quot;(ITEM_PRI-)C(E&quot;:15-),&quot;(ITEM_STATUS)&quot;:&quot;(---)C(LOSED--)&quot;}]&#xa;|        |    [{&quot;(id-----)&quot;:5,&quot;(postedBy--)&quot;:(2,&quot;-)t(--)itle&quot;(------------):&quot;(test title-)&quot;,&quot;(post------)D(ate)&quot;:null,&quot;(price---------)&quot;:(15),&quot;(bought------)B(y)&quot;:1,&quot;(status&quot;:&quot;)C(LOSED&quot;),&quot;(description)&quot;:&quot;(DES)C(RIPTION)&quot;}]&#xa;|        [{&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;}]&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == &apos;[{&quot;id&quot;:5,&quot;postedBy&quot;:2,&quot;title&quot;:&quot;test title&quot;,&quot;postDate&quot;:null,&quot;price&quot;:15,&quot;boughtBy&quot;:1,&quot;status&quot;:&quot;CLOSED&quot;,&quot;description&quot;:&quot;DESCRIPTION&quot;}]&apos;
+|        |    |
+|        |    false
+|        |    124 differences (25% similarity)
+|        |    [{&quot;(ITEM_ID)&quot;:5,&quot;(ITEM_TITLE)&quot;:(&quot;tes)t( t)itle&quot;(,&quot;ITEM_DESC&quot;):&quot;(DESCRIPTION)&quot;,&quot;(ITEM_POST_)D(ATE)&quot;:null,&quot;(ITEM_POSTED_BY)&quot;:(2-),&quot;(ITEM_BOUGHT_)B(Y)&quot;:1,&quot;(ITEM_PRI-)C(E&quot;:15-),&quot;(ITEM_STATUS)&quot;:&quot;(---)C(LOSED--)&quot;}]
+|        |    [{&quot;(id-----)&quot;:5,&quot;(postedBy--)&quot;:(2,&quot;-)t(--)itle&quot;(------------):&quot;(test title-)&quot;,&quot;(post------)D(ate)&quot;:null,&quot;(price---------)&quot;:(15),&quot;(bought------)B(y)&quot;:1,&quot;(status&quot;:&quot;)C(LOSED&quot;),&quot;(description)&quot;:&quot;(DES)C(RIPTION)&quot;}]
+|        [{&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;}]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@722531ab
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from test hello--
+]]></system-out>
+  <system-err><![CDATA[--Output from test hello--
+]]></system-err>
+</testsuite>
