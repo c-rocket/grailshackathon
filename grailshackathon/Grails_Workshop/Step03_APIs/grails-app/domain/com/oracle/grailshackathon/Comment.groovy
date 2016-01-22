@@ -14,6 +14,7 @@ class Comment {
 		commentBy column: 'COMMENT_BY'
 		createDate column: 'COMMENT_CREATE_DATE'
 		text column: 'COMMENT_TEXT'
+		version false
 	}
 
 	Integer itemId

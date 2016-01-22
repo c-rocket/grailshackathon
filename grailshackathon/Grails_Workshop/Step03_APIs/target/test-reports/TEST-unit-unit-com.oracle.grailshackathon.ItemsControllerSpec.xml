@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemsControllerSpec" tests="1" time="12.485" timestamp="2016-01-19T23:49:01">
+<testsuite errors="0" failures="1" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemsControllerSpec" tests="1" time="9.222" timestamp="2016-01-22T21:38:53">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test hello" time="12.39" />
-  <system-out><![CDATA[--Output from test hello--
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test get items" time="9.099">
+    <failure message="Condition not satisfied:&#xa;&#xa;response.text == &apos;[{&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;}]&apos;&#xa;|        |    |&#xa;|        []   false&#xa;|             164 differences (1% similarity)&#xa;|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]&#xa;|             [({&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;})]&#xa;org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == &apos;[{&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;}]&apos;
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({&quot;ITEM_ID&quot;:5,&quot;ITEM_TITLE&quot;:&quot;test title&quot;,&quot;ITEM_DESC&quot;:&quot;DESCRIPTION&quot;,&quot;ITEM_POST_DATE&quot;:null,&quot;ITEM_POSTED_BY&quot;:2,&quot;ITEM_BOUGHT_BY&quot;:1,&quot;ITEM_PRICE&quot;:15,&quot;ITEM_STATUS&quot;:&quot;CLOSED&quot;})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from test get items--
 ]]></system-out>
-  <system-err><![CDATA[--Output from test hello--
+  <system-err><![CDATA[--Output from test get items--
 ]]></system-err>
 </testsuite>

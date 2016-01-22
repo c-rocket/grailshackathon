@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemServiceSpec" tests="1" time="0.187" timestamp="2016-01-22T21:39:02">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.ItemServiceSpec" name="test something" time="0.181" />
+  <system-out><![CDATA[--Output from test something--
+]]></system-out>
+  <system-err><![CDATA[--Output from test something--
+]]></system-err>
+</testsuite>

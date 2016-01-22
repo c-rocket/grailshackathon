@@ -14,6 +14,7 @@ class User {
 		password column: 'USER_PASSWORD'
 		email column: 'USER_EMAIL'
 		gravatar column: 'USER_GRAVATAR'
+		version false
 	}
 
 	String username

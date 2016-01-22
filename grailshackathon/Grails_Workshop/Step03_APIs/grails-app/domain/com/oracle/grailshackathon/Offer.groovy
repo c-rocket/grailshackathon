@@ -15,6 +15,7 @@ class Offer {
 		amount column: 'OFFER_AMOUNT'
 		createDate column: 'OFFER_CREATE_DATE'
 		status column: 'OFFER_STATUS'
+		version false
 	}
 
 	Integer itemId

@@ -94,3 +94,263 @@ items.size() > 0
 []    0      false
 
 	at com.oracle.grailshackathon.ItemIntegrationSpec.test that items are returned(ItemIntegrationSpec.groovy:21)
+2016-01-22 13:30:57,189 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:30:57,279 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:30:57,282 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:30:57,282 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:30:57,695 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:30:57,695 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@ef86c72
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:28)
+2016-01-22 13:36:36,179 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:36:36,188 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:36:36,191 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:36:36,191 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:36:36,200 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:36:36,201 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,079 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,087 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,090 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,091 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,130 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 13:38:55,134 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test hello(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,145 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,163 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,166 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,166 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,255 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:27:49,256 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:24)
+2016-01-22 14:31:25,841 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:31:25,848 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:31:25,854 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:31:25,855 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:31:25,948 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:31:25,949 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: findAll for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,202 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,213 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,216 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,216 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,226 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:33:20,227 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: demand for class: com.oracle.grailshackathon.ItemService
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:43,977 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:43,993 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:44,000 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:44,001 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:44,020 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:37:44,023 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.items() is applicable for argument types: () values: []
+Possible solutions: is(java.lang.Object), getItems(), getAt(java.lang.String), dump(), grep(), every()
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:25)
+2016-01-22 14:39:02,438 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+2016-01-22 14:39:02,445 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+2016-01-22 14:39:02,448 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+2016-01-22 14:39:02,449 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+2016-01-22 14:39:02,458 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)
+2016-01-22 14:39:02,462 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+|        |    |
+|        []   false
+|             164 differences (1% similarity)
+|             [(--------------------------------------------------------------------------------------------------------------------------------------------------------------------)]
+|             [({"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"})]
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@2baac4a7
+
+	at com.oracle.grailshackathon.ItemsControllerSpec.test get items(ItemsControllerSpec.groovy:28)

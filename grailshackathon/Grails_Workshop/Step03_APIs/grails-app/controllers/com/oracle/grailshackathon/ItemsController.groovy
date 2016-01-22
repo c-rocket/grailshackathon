@@ -3,18 +3,28 @@ package com.oracle.grailshackathon
 import grails.converters.JSON
 
 class ItemsController {
-	def items(){
-		render Item.findAll().collect{
-			[
-				ITEM_ID:it.id,
-				ITEM_TITLE:it.title,
-				ITEM_DESC:it.description,
-				ITEM_POST_DATE:it.postDate,
-				ITEM_POSTED_BY:it.postedBy,
-				ITEM_BOUGHT_BY:it.boughtBy,
-				ITEM_PRICE:it.price,
-				ITEM_STATUS:it.status
-			]
-		} as JSON
+
+	def itemService
+
+	def getItems(){
+		render itemService.findAll() as JSON
+	}
+	
+	def getIitem(def id){
+		render itemService.findById(id) as JSON
+	}
+
+	def deleteItem(BigDecimal id){
+		render itemService.delete(id)
+	}
+
+	def createItem(def id){
+		def jsonObject = request.JSON
+		render itemService.create(jsonObject) as JSON
+	}
+	
+	def updateItem(def id){
+		def jsonObject = request.JSON
+		render itemService.update(id,jsonObject) as JSON
 	}
 }

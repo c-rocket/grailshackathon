@@ -1,0 +1,10 @@
+Testsuite: com.oracle.grailshackathon.ItemServiceSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.187 sec
+------------- Standard Output ---------------
+--Output from test something--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test something--
+------------- ---------------- ---------------
+
+Testcase: test something took 0.181 sec
