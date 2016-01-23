@@ -1,5 +1,5 @@
 Testsuite: com.oracle.grailshackathon.UserIntegrationSpec
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.368 sec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.312 sec
 ------------- Standard Output ---------------
 --Output from test that items are returned--
 ------------- ---------------- ---------------
@@ -7,4 +7,4 @@ Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.368 sec
 --Output from test that items are returned--
 ------------- ---------------- ---------------
 
-Testcase: test that items are returned took 0.368 sec
+Testcase: test that items are returned took 0.311 sec

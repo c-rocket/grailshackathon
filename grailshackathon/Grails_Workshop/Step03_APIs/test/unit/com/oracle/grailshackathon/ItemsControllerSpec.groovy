@@ -20,11 +20,12 @@ class ItemsControllerSpec extends Specification {
 
 	void "test get items"() {
 		when: 
-		def items = [new Item(id:5,title:'test title',boughtBy:1,description:'DESCRIPTION',postedBy:2,price:15,status:'CLOSED')]
-		ItemService.metaClass.findAll = { -> items};
+		def items = [["hi":"bye"]]
+		def mock = [findAll: {-> return items }] as ItemService
+		controller.itemService = mock
 		controller.getItems()
 
 		then:
-		response.text == '[{"ITEM_ID":5,"ITEM_TITLE":"test title","ITEM_DESC":"DESCRIPTION","ITEM_POST_DATE":null,"ITEM_POSTED_BY":2,"ITEM_BOUGHT_BY":1,"ITEM_PRICE":15,"ITEM_STATUS":"CLOSED"}]'
+		response.text == '[{"hi":"bye"}]'
 	}
 }

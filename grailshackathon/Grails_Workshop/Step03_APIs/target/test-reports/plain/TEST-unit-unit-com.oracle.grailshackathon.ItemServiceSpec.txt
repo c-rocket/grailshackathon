@@ -1,10 +1,27 @@
 Testsuite: com.oracle.grailshackathon.ItemServiceSpec
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.187 sec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 1.279 sec
 ------------- Standard Output ---------------
---Output from test something--
+--Output from test formating of item returned for find all--
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
---Output from test something--
+--Output from test formating of item returned for find all--
 ------------- ---------------- ---------------
 
-Testcase: test something took 0.181 sec
+Testcase: test formating of item returned for find all took 1.251 sec
+	FAILED
+Condition not satisfied:
+
+all == [[ ITEM_ID:5, ITEM_TITLE:"test ttile", ITEM_DESC:"DESCRIPTION", ITEM_POST_DATE:null, ITEM_POSTED_BY:2, ITEM_BOUGHT_BY:1, ITEM_PRICE:15, ITEM_STATUS:"CLOSED" ]]
+|   |
+|   false
+[[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:2, ITEM_BOUGHT_BY:1, ITEM_PRICE:15, ITEM_STATUS:CLOSED]]
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+all == [[ ITEM_ID:5, ITEM_TITLE:"test ttile", ITEM_DESC:"DESCRIPTION", ITEM_POST_DATE:null, ITEM_POSTED_BY:2, ITEM_BOUGHT_BY:1, ITEM_PRICE:15, ITEM_STATUS:"CLOSED" ]]
+|   |
+|   false
+[[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:2, ITEM_BOUGHT_BY:1, ITEM_PRICE:15, ITEM_STATUS:CLOSED]]
+
+	at com.oracle.grailshackathon.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:30)
+
