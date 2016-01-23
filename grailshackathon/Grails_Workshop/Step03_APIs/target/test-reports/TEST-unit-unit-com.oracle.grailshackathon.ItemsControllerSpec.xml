@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemsControllerSpec" tests="1" time="14.526" timestamp="2016-01-23T05:22:20">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemsControllerSpec" tests="5" time="7.118" timestamp="2016-01-23T15:46:51">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test get items" time="14.406" />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test get items" time="6.818" />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test get items by id" time="0.06" />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test delete item" time="0.046" />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test create item" time="0.05" />
+  <testcase classname="com.oracle.grailshackathon.ItemsControllerSpec" name="test update item" time="0.076" />
   <system-out><![CDATA[--Output from test get items--
+--Output from test get items by id--
+--Output from test delete item--
+--Output from test create item--
+--Output from test update item--
 ]]></system-out>
   <system-err><![CDATA[--Output from test get items--
+--Output from test get items by id--
+--Output from test delete item--
+--Output from test create item--
+--Output from test update item--
 ]]></system-err>
 </testsuite>

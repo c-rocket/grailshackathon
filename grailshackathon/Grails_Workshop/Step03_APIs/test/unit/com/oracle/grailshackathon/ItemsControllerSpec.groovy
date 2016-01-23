@@ -19,7 +19,7 @@ class ItemsControllerSpec extends Specification {
 	}
 
 	void "test get items"() {
-		when: 
+		when:
 		def items = [["hi":"bye"]]
 		def mock = [findAll: {-> return items }] as ItemService
 		controller.itemService = mock
@@ -27,5 +27,48 @@ class ItemsControllerSpec extends Specification {
 
 		then:
 		response.text == '[{"hi":"bye"}]'
+	}
+
+	void "test get items by id"() {
+		when:
+		def item = ["hi":"bye"]
+		def mock = [findById: {id-> return item}] as ItemService
+		controller.itemService = mock
+		controller.getItem(5)
+
+		then:
+		response.text == '{"hi":"bye"}'
+	}
+	
+	void "test delete item"() {
+		when:
+		def mock = [delete: {id-> return true}] as ItemService
+		controller.itemService = mock
+		controller.deleteItem(5)
+
+		then:
+		response.text == 'true'
+	}
+	
+	void "test create item"() {
+		when:
+		def item = ["hi":"bye"]
+		def mock = [create: {obj-> return item}] as ItemService
+		controller.itemService = mock
+		controller.createItem()
+
+		then:
+		response.text == '{"hi":"bye"}'
+	}
+	
+	void "test update item"() {
+		when:
+		def item = ["hi":"bye"]
+		def mock = [update: {id,obj-> return item}] as ItemService
+		controller.itemService = mock
+		controller.updateItem(5)
+
+		then:
+		response.text == '{"hi":"bye"}'
 	}
 }

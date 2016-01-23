@@ -27,15 +27,15 @@ class ItemServiceSpec extends Specification {
 		def all = service.findAll()
 		
 		then:
-		all == [[
-				ITEM_ID:5,
-				ITEM_TITLE:"test ttile",
-				ITEM_DESC:"DESCRIPTION",
-				ITEM_POST_DATE:null,
-				ITEM_POSTED_BY:2,
-				ITEM_BOUGHT_BY:1,
-				ITEM_PRICE:15,
-				ITEM_STATUS:"CLOSED"
-			]]
+		all.size() == 1
+		def first = all[0]
+		first.ITEM_ID == 5
+		first.ITEM_TITLE == "test title"
+		first.ITEM_DESC == "DESCRIPTION"
+		first.ITEM_POST_DATE == null
+		first.ITEM_POSTED_BY == 2
+		first.ITEM_BOUGHT_BY == 1
+		first.ITEM_PRICE == 15
+		first.ITEM_STATUS == "CLOSED"
     }
 }
