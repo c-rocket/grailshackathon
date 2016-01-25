@@ -2,6 +2,7 @@ package com.oracle.grailshackathon.service
 
 import com.oracle.grailshackathon.Item;
 import com.oracle.grailshackathon.ItemService;
+import com.oracle.grailshackathon.User
 
 import grails.test.mixin.TestFor
 import grails.test.mixin.domain.DomainClassUnitTestMixin;
@@ -15,18 +16,22 @@ import spock.lang.Specification
 @TestMixin(DomainClassUnitTestMixin)
 class ItemServiceSpec extends Specification {
 
-    def setup() {
-    }
+	def setup() {
+	}
 
-    def cleanup() {
-    }
+	def cleanup() {
+	}
 
-    void "test formating of item returned for find all"() {
+	void "test formating of item returned for find all"() {
 		when:
-		def items = [new Item(id:5,title:"test title",boughtBy:1,description:"DESCRIPTION",postedBy:2,price:15,status:"CLOSED")]
+		def postedBy = new User(id:2, gravatar:"GRAVATAR")
+		def boughtBy = new User(id:1)
+		def items = [
+			new Item(id:5,title:"test title",boughtBy:boughtBy,description:"DESCRIPTION",postedBy:postedBy,price:15,status:"CLOSED")
+		]
 		Item.metaClass.'static'.findAll = {->return items}
 		def all = service.findAll()
-		
+
 		then:
 		all.size() == 1
 		def first = all[0]
@@ -38,5 +43,6 @@ class ItemServiceSpec extends Specification {
 		first.ITEM_BOUGHT_BY == 1
 		first.ITEM_PRICE == 15
 		first.ITEM_STATUS == "CLOSED"
-    }
+		first.USER_GRAVATAR == "GRAVATAR"
+	}
 }

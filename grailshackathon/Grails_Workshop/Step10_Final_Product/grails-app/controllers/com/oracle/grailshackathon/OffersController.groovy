@@ -6,16 +6,16 @@ class OffersController {
 
 	def offerService
 
-	def getOffers(def id){
-		render offerService.findOffersForItem(id) as JSON
+	def getOffers(){
+		render offerService.findOffersForItem(params.id) as JSON
 	}
 	
-	def updateOffer(def id){
+	def updateOffer(){
 		def jsonObject = request.JSON
-		render offerService.update(id,jsonObject) as JSON
+		render offerService.update(params.id,jsonObject) as JSON
 	}
 	
-	def newOffer(def id){
+	def newOffer(){
 		def jsonObject = request.JSON
 		render offerService.create(jsonObject) as JSON
 	}

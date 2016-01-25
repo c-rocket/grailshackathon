@@ -25,7 +25,8 @@ class CommentsControllerSpec extends Specification {
 		def comments = [["hi":"bye"]]
 		def mock = [findCommentsForItem: {itemId-> return comments }] as CommentService
 		controller.commentService = mock
-		controller.getComments(5)
+		controller.params.itemId = 5
+		controller.getComments()
 
 		then:
 		response.text == '[{"hi":"bye"}]'

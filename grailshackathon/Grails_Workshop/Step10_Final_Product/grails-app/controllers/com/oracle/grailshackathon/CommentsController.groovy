@@ -6,8 +6,8 @@ class CommentsController {
 
 	def commentService
 
-	def getComments(def itemId){
-		render commentService.findCommentsForItem(itemId) as JSON
+	def getComments(){
+		render commentService.findCommentsForItem(params.itemId) as JSON
 	}
 	
 	def newComment(){

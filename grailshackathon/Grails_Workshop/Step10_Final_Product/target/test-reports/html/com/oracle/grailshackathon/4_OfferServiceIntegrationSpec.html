@@ -2,105 +2,79 @@
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-                    Test - UserServiceSpec</title>
+                    Test - OfferServiceIntegrationSpec</title>
 <link rel="shortcut icon" href="http://grails.org/images/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" title="Style" href="../../../../stylesheet.css">
+<link rel="stylesheet" type="text/css" title="Style" href="../../../stylesheet.css">
 </head>
 <body>
 <div class="container container_8" id="report">
 <div class="grid_6">
-<a title="Home" href="../../../../index.html">
+<a title="Home" href="../../../index.html">
 <div class="grailslogo"></div>
 </a>
-<h1>UserServiceSpec</h1>
-<h2>Package: com.oracle.grailshackathon.service</h2>
+<h1>OfferServiceIntegrationSpec</h1>
+<h2>Package: com.oracle.grailshackathon</h2>
 </div>
 <div class="grid_2">
 <nav id="navigationlinks">
 <p>
-<a href="../../../../failed.html">
+<a href="../../../failed.html">
                     Tests with failure and errors
                 </a>
 </p>
 <p>
-<a href="../../../../index.html">
+<a href="../../../index.html">
                     Package summary
                 </a>
 </p>
 <p>
-<a href="../../../../all.html">
+<a href="../../../all.html">
                     Show all tests
                 </a>
 </p>
 </nav>
 </div>
 <div class="clear"></div>
-<div class="testsuite success">
+<div class="testsuite error">
 <div class="header">
-<h2>UserServiceSpec</h2>
+<h2>OfferServiceIntegrationSpec</h2>
 <h3>
-                        Executed
-                        4
-                        tests
+                        A single test executed
                     
-                        without a single error or failure!
+                        with
+                        one error
+                        .
                     </h3>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password - valid">
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test Find Offer for Item">
 <div class="grid_3 alpha">
 <p>
-<span class="icon success"></span><b class="testname message success">test change password - valid</b>
+<span class="icon error"></span><b class="testname message error">Test Find Offer for Item</b>
 </p>
-<p class="summary">Executed in 0.465 seconds.</p>
+<p class="summary">Executed in 0.609 seconds.</p>
 </div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password - invalid">
-<div class="grid_3 alpha">
+<div class="grid_5 omega outputinfo">
+<div class="details">
 <p>
-<span class="icon success"></span><b class="testname message success">test change password - invalid</b>
+<b class="message">No such property: it for class: com.oracle.grailshackathon.OfferService</b>
 </p>
-<p class="summary">Executed in 0.089 seconds.</p>
+<pre>groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+</pre>
 </div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
 </div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test login - valid">
-<div class="grid_3 alpha">
-<p>
-<span class="icon success"></span><b class="testname message success">test login - valid</b>
-</p>
-<p class="summary">Executed in 0.319 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo"></div>
-<div class="clear"></div>
-</div>
-<div class="testcase clearfix success grid_8 alpha omega" data-name="test login - invalid">
-<div class="grid_3 alpha">
-<p>
-<span class="icon success"></span><b class="testname message success">test login - invalid</b>
-</p>
-<p class="summary">Executed in 0.043 seconds.</p>
-</div>
-<div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
 </div>
 <div class="clearfix output footer">
 <div class="sysout">
 <h2>Standard output</h2>
-<pre class="stdout">--Output from test change password - valid--
---Output from test change password - invalid--
---Output from test login - valid--
---Output from test login - invalid--
+<pre class="stdout">--Output from Test Find Offer for Item--
 </pre>
 </div>
 <div class="syserr">
 <h2>System error</h2>
-<pre class="syserr">--Output from test change password - valid--
---Output from test change password - invalid--
---Output from test login - valid--
---Output from test login - invalid--
+<pre class="syserr">--Output from Test Find Offer for Item--
 </pre>
 </div>
 </div>

@@ -25,7 +25,8 @@ class OffersControllerSpec extends Specification {
 		def offers = [["hi":"bye"]]
 		def mock = [findOffersForItem: {itemId-> return offers }] as OfferService
 		controller.offerService = mock
-		controller.getOffers(5)
+		controller.params.id = 5
+		controller.getOffers()
 
 		then:
 		response.text == '[{"hi":"bye"}]'
@@ -36,7 +37,8 @@ class OffersControllerSpec extends Specification {
 		def offer = ["hi":"bye"]
 		def mock = [update: {id,obj-> return offer}] as OfferService
 		controller.offerService = mock
-		controller.updateOffer(5)
+		controller.params.id = 5
+		controller.updateOffer()
 
 		then:
 		response.text == '{"hi":"bye"}'
@@ -47,7 +49,7 @@ class OffersControllerSpec extends Specification {
 		def offer = ["hi":"bye"]
 		def mock = [create: {id-> return offer}] as OfferService
 		controller.offerService = mock
-		controller.newOffer(5)
+		controller.newOffer()
 
 		then:
 		response.text == '{"hi":"bye"}'

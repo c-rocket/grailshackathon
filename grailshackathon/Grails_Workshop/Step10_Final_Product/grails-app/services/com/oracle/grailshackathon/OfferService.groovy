@@ -6,11 +6,15 @@ import grails.transaction.Transactional
 class OfferService {
 
 	def findOffersForItem(def itemId) {
-		Offer.findAllByItemId(itemId).collect{
+		Offer.createCriteria().list {
+			item{
+				eq('id',itemId)
+			}
+		}.collect{
 			[
 				OFFER_ID:it.id,
-				ITEM_ID:it.itemId,
-				OFFER_BY:it.offerBy,
+				ITEM_ID:it.item?.id,
+				OFFER_BY:it.offerBy?.id,
 				OFFER_AMOUNT:it.amount,
 				OFFER_CREATE_DATE:it.createDate,
 				OFFER_STATUS:it.status
@@ -19,12 +23,13 @@ class OfferService {
 	}
 	
 	def update(def id, def jsonObject){
-		def offer = new Offer(itemId:jsonObject.p1,offerBy:jsonObject.p2,amount:jsonObject.p3);
-		offer.save()
+		def offer = Offer.findById(id)
+		offer.status = jsonObject.p1
+		offer.save(flush: true)
 		[
 			OFFER_ID:it.id,
-			ITEM_ID:it.itemId,
-			OFFER_BY:it.offerBy,
+			ITEM_ID:it.item?.id,
+			OFFER_BY:it.offerBy?.id,
 			OFFER_AMOUNT:it.amount,
 			OFFER_CREATE_DATE:it.createDate,
 			OFFER_STATUS:it.status
@@ -32,12 +37,14 @@ class OfferService {
 	}
 
 	def create(def jsonObject){
-		def offer = new Offer(itemId:jsonObject.p1,offerBy:jsonObject.p2,amount:jsonObject.p3);
-		offer.save()
+		def item = Item.findById(jsonObject.p1)
+		def offerBy = User.findById(jsonObject.p2)
+		def offer = new Offer(itemId:item,offerBy:offerBy,amount:jsonObject.p3);
+		offer.save(flush: true)
 		[
 			OFFER_ID:it.id,
-			ITEM_ID:it.itemId,
-			OFFER_BY:it.offerBy,
+			ITEM_ID:it.item?.id,
+			OFFER_BY:it.offerBy?.id,
 			OFFER_AMOUNT:it.amount,
 			OFFER_CREATE_DATE:it.createDate,
 			OFFER_STATUS:it.status

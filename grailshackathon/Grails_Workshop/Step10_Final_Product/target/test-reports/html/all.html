@@ -15,10 +15,15 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        24
+                        26
                         tests
                     
-                        without a single error or failure!
+                        with
+                        one error
+
+                        and
+                        one failure
+                        .
                     </p>
 </div>
 <div class="grid_2 omega">
@@ -41,6 +46,105 @@
 </nav>
 </div>
 <div class="clear"></div>
+<div class="testsuite failure">
+<div class="header">
+<h2>CommentServiceIntegrationSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="Test Find Comments for Item">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">Test Find Comments for Item</b>
+</p>
+<p class="summary">Executed in 1.372 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test Find Comments for Item--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test Find Comments for Item--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite error">
+<div class="header">
+<h2>OfferServiceIntegrationSpec</h2>
+<h3>
+                        A single test executed
+                    
+                        with
+                        one error
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix error grid_8 alpha omega" data-name="Test Find Offer for Item">
+<div class="grid_3 alpha">
+<p>
+<span class="icon error"></span><b class="testname message error">Test Find Offer for Item</b>
+</p>
+<p class="summary">Executed in 0.609 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">No such property: it for class: com.oracle.grailshackathon.OfferService</b>
+</p>
+<pre>groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from Test Find Offer for Item--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from Test Find Offer for Item--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
 <div class="testsuite success">
 <div class="header">
 <h2>CommentIntegrationSpec</h2>
@@ -55,7 +159,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.753 seconds.</p>
+<p class="summary">Executed in 0.684 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -90,7 +194,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test find comments for item</b>
 </p>
-<p class="summary">Executed in 8.539 seconds.</p>
+<p class="summary">Executed in 15.359 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -100,7 +204,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test create comment</b>
 </p>
-<p class="summary">Executed in 0.497 seconds.</p>
+<p class="summary">Executed in 0.08 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -135,7 +239,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.307 seconds.</p>
+<p class="summary">Executed in 0.311 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -170,7 +274,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test get items</b>
 </p>
-<p class="summary">Executed in 1.06 seconds.</p>
+<p class="summary">Executed in 0.308 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -180,7 +284,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test get items by id</b>
 </p>
-<p class="summary">Executed in 0.269 seconds.</p>
+<p class="summary">Executed in 0.066 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -190,7 +294,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test delete item</b>
 </p>
-<p class="summary">Executed in 0.773 seconds.</p>
+<p class="summary">Executed in 0.071 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -200,7 +304,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test create item</b>
 </p>
-<p class="summary">Executed in 0.071 seconds.</p>
+<p class="summary">Executed in 0.058 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -210,7 +314,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test update item</b>
 </p>
-<p class="summary">Executed in 0.065 seconds.</p>
+<p class="summary">Executed in 0.063 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -251,7 +355,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test formating of item returned for find all</b>
 </p>
-<p class="summary">Executed in 1.37 seconds.</p>
+<p class="summary">Executed in 1.51 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -284,7 +388,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.292 seconds.</p>
+<p class="summary">Executed in 0.307 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -319,7 +423,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test find offers for item</b>
 </p>
-<p class="summary">Executed in 0.313 seconds.</p>
+<p class="summary">Executed in 0.369 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -329,7 +433,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test update offer</b>
 </p>
-<p class="summary">Executed in 0.056 seconds.</p>
+<p class="summary">Executed in 0.057 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -339,7 +443,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test create offers</b>
 </p>
-<p class="summary">Executed in 0.049 seconds.</p>
+<p class="summary">Executed in 0.125 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -376,7 +480,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.304 seconds.</p>
+<p class="summary">Executed in 0.315 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -411,7 +515,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test change password good change</b>
 </p>
-<p class="summary">Executed in 0.311 seconds.</p>
+<p class="summary">Executed in 0.379 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -421,7 +525,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test change password bad change</b>
 </p>
-<p class="summary">Executed in 0.044 seconds.</p>
+<p class="summary">Executed in 0.029 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -431,7 +535,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test create user</b>
 </p>
-<p class="summary">Executed in 0.054 seconds.</p>
+<p class="summary">Executed in 0.048 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -441,7 +545,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">login - valid</b>
 </p>
-<p class="summary">Executed in 0.127 seconds.</p>
+<p class="summary">Executed in 0.05 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -451,7 +555,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">login - invalid</b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.043 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -494,7 +598,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test change password - valid</b>
 </p>
-<p class="summary">Executed in 0.465 seconds.</p>
+<p class="summary">Executed in 0.356 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -504,7 +608,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test change password - invalid</b>
 </p>
-<p class="summary">Executed in 0.089 seconds.</p>
+<p class="summary">Executed in 0.075 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -514,7 +618,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test login - valid</b>
 </p>
-<p class="summary">Executed in 0.319 seconds.</p>
+<p class="summary">Executed in 0.079 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -524,7 +628,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test login - invalid</b>
 </p>
-<p class="summary">Executed in 0.043 seconds.</p>
+<p class="summary">Executed in 0.067 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>

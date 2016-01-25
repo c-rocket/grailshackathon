@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.CommentsControllerSpec" tests="2" time="9.105" timestamp="2016-01-25T19:43:01">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.CommentsControllerSpec" tests="2" time="15.54" timestamp="2016-01-25T23:17:49">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test find comments for item" time="8.539" />
-  <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test create comment" time="0.497" />
+  <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test find comments for item" time="15.359" />
+  <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test create comment" time="0.08" />
   <system-out><![CDATA[--Output from test find comments for item--
 --Output from test create comment--
 ]]></system-out>

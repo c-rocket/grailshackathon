@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="0" name="CommentIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.803" timestamp="2016-01-25T19:43:55">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="0" name="CommentIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.722" timestamp="2016-01-25T23:18:43">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.CommentIntegrationSpec" name="test that items are returned" time="0.753" />
+      <testcase classname="com.oracle.grailshackathon.CommentIntegrationSpec" name="test that items are returned" time="0.684" />
 
       <system-out><![CDATA[--Output from test that items are returned--
 ]]></system-out>
@@ -12,10 +12,32 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="1" name="ItemIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.327" timestamp="2016-01-25T19:43:56">
+  <testsuite errors="0" failures="1" hostname="CCROCKET-LAP" id="1" name="CommentServiceIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="1.39" timestamp="2016-01-25T23:18:44">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.ItemIntegrationSpec" name="test that items are returned" time="0.307" />
+      <testcase classname="com.oracle.grailshackathon.CommentServiceIntegrationSpec" name="Test Find Comments for Item" time="1.372">
+          <failure message="Condition not satisfied:&#xa;&#xa;comments.size() == 1&#xa;|        |      |&#xa;[]       0      false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test Find Comments for Item--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test Find Comments for Item--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="2" name="ItemIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.329" timestamp="2016-01-25T23:18:45">
+      <properties />
+
+      <testcase classname="com.oracle.grailshackathon.ItemIntegrationSpec" name="test that items are returned" time="0.311" />
 
       <system-out><![CDATA[--Output from test that items are returned--
 ]]></system-out>
@@ -24,10 +46,10 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="2" name="OfferIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.31" timestamp="2016-01-25T19:43:56">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="3" name="OfferIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.323" timestamp="2016-01-25T23:18:45">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.OfferIntegrationSpec" name="test that items are returned" time="0.292" />
+      <testcase classname="com.oracle.grailshackathon.OfferIntegrationSpec" name="test that items are returned" time="0.307" />
 
       <system-out><![CDATA[--Output from test that items are returned--
 ]]></system-out>
@@ -36,10 +58,28 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="3" name="UserIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.304" timestamp="2016-01-25T19:43:56">
+  <testsuite errors="1" failures="0" hostname="CCROCKET-LAP" id="4" name="OfferServiceIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.624" timestamp="2016-01-25T23:18:46">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.UserIntegrationSpec" name="test that items are returned" time="0.304" />
+      <testcase classname="com.oracle.grailshackathon.OfferServiceIntegrationSpec" name="Test Find Offer for Item" time="0.609">
+          <error message="No such property: it for class: com.oracle.grailshackathon.OfferService" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from Test Find Offer for Item--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from Test Find Offer for Item--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="5" name="UserIntegrationSpec" package="com.oracle.grailshackathon" tests="1" time="0.315" timestamp="2016-01-25T23:18:46">
+      <properties />
+
+      <testcase classname="com.oracle.grailshackathon.UserIntegrationSpec" name="test that items are returned" time="0.315" />
 
       <system-out><![CDATA[--Output from test that items are returned--
 ]]></system-out>
@@ -48,12 +88,12 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="4" name="CommentsControllerSpec" package="com.oracle.grailshackathon.controller" tests="2" time="9.105" timestamp="2016-01-25T19:43:01">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="6" name="CommentsControllerSpec" package="com.oracle.grailshackathon.controller" tests="2" time="15.54" timestamp="2016-01-25T23:17:49">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test find comments for item" time="8.539" />
+      <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test find comments for item" time="15.359" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test create comment" time="0.497" />
+      <testcase classname="com.oracle.grailshackathon.controller.CommentsControllerSpec" name="test create comment" time="0.08" />
 
       <system-out><![CDATA[--Output from test find comments for item--
 --Output from test create comment--
@@ -64,18 +104,18 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="5" name="ItemsControllerSpec" package="com.oracle.grailshackathon.controller" tests="5" time="2.273" timestamp="2016-01-25T19:43:10">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="7" name="ItemsControllerSpec" package="com.oracle.grailshackathon.controller" tests="5" time="0.604" timestamp="2016-01-25T23:18:05">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items" time="1.06" />
+      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items" time="0.308" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items by id" time="0.269" />
+      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items by id" time="0.066" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test delete item" time="0.773" />
+      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test delete item" time="0.071" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test create item" time="0.071" />
+      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test create item" time="0.058" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test update item" time="0.065" />
+      <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test update item" time="0.063" />
 
       <system-out><![CDATA[--Output from test get items--
 --Output from test get items by id--
@@ -92,14 +132,14 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="6" name="OffersControllerSpec" package="com.oracle.grailshackathon.controller" tests="3" time="0.444" timestamp="2016-01-25T19:43:12">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="8" name="OffersControllerSpec" package="com.oracle.grailshackathon.controller" tests="3" time="0.579" timestamp="2016-01-25T23:18:06">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test find offers for item" time="0.313" />
+      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test find offers for item" time="0.369" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test update offer" time="0.056" />
+      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test update offer" time="0.057" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test create offers" time="0.049" />
+      <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test create offers" time="0.125" />
 
       <system-out><![CDATA[--Output from test find offers for item--
 --Output from test update offer--
@@ -112,18 +152,18 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="7" name="UsersControllerSpec" package="com.oracle.grailshackathon.controller" tests="5" time="0.615" timestamp="2016-01-25T19:43:13">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="9" name="UsersControllerSpec" package="com.oracle.grailshackathon.controller" tests="5" time="0.576" timestamp="2016-01-25T23:18:06">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password good change" time="0.311" />
+      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password good change" time="0.379" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password bad change" time="0.044" />
+      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password bad change" time="0.029" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test create user" time="0.054" />
+      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test create user" time="0.048" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - valid" time="0.127" />
+      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - valid" time="0.05" />
 
-      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - invalid" time="0.046" />
+      <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - invalid" time="0.043" />
 
       <system-out><![CDATA[--Output from test change password good change--
 --Output from test change password bad change--
@@ -140,10 +180,10 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="8" name="ItemServiceSpec" package="com.oracle.grailshackathon.service" tests="1" time="1.399" timestamp="2016-01-25T19:43:13">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="10" name="ItemServiceSpec" package="com.oracle.grailshackathon.service" tests="1" time="1.558" timestamp="2016-01-25T23:18:07">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.service.ItemServiceSpec" name="test formating of item returned for find all" time="1.37" />
+      <testcase classname="com.oracle.grailshackathon.service.ItemServiceSpec" name="test formating of item returned for find all" time="1.51" />
 
       <system-out><![CDATA[--Output from test formating of item returned for find all--
 ]]></system-out>
@@ -152,16 +192,16 @@
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="9" name="UserServiceSpec" package="com.oracle.grailshackathon.service" tests="4" time="0.924" timestamp="2016-01-25T19:43:15">
+  <testsuite errors="0" failures="0" hostname="CCROCKET-LAP" id="11" name="UserServiceSpec" package="com.oracle.grailshackathon.service" tests="4" time="0.588" timestamp="2016-01-25T23:18:08">
       <properties />
 
-      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.465" />
+      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.356" />
 
-      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.089" />
+      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.075" />
 
-      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.319" />
+      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.079" />
 
-      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.043" />
+      <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.067" />
 
       <system-out><![CDATA[--Output from test change password - valid--
 --Output from test change password - invalid--

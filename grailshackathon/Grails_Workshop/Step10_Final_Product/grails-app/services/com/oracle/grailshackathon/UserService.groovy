@@ -16,7 +16,7 @@ class UserService {
 		try{
 			if(user && encoder.matches(oldpw, user.password)){
 				user.password = newHash
-				user.save()
+				user.save(flush: true)
 				return true
 			}
 		}catch (Exception e){
@@ -46,11 +46,11 @@ class UserService {
 
 	def create(def jsonObject){
 		StandardPasswordEncoder encoder = new StandardPasswordEncoder(KEY);
-		String hash = encoder.encode(jsonObject.password);
+		String hash = encoder.encode(jsonObject.pw);
 		String gravatar = Gravatar.url(jsonObject.email);
 
 		def user = new User(username:jsonObject.username,email:jsonObject.email,password:hash, gravatar: gravatar);
-		user.save()
+		user.save(flush: true)
 		[
 			USER_ID:user.id,
 			USER_NAME:user.username,

@@ -57,7 +57,9 @@ class UsersControllerSpec extends Specification {
 		def user = ["hi":"bye"]
 		def mock = [login: {email,password-> return user}] as UserService
 		controller.userService = mock
-		controller.login("email","password")
+		controller.params.email = "email"
+		controller.params.password = "password"
+		controller.login()
 
 		then:
 		response.text == '{"hi":"bye"}'
@@ -67,7 +69,9 @@ class UsersControllerSpec extends Specification {
 		when:
 		def mock = [login: {email,password-> return null}] as UserService
 		controller.userService = mock
-		controller.login("email","password")
+		controller.params.email = "email"
+		controller.params.password = "password"
+		controller.login()
 
 		then:
 		response.text == '{}'

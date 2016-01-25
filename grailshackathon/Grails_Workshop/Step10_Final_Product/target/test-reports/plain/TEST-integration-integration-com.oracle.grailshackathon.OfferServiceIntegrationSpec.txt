@@ -1,0 +1,16 @@
+Testsuite: com.oracle.grailshackathon.OfferServiceIntegrationSpec
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.624 sec
+------------- Standard Output ---------------
+--Output from Test Find Offer for Item--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from Test Find Offer for Item--
+------------- ---------------- ---------------
+
+Testcase: Test Find Offer for Item took 0.516 sec
+	Caused an ERROR
+No such property: it for class: com.oracle.grailshackathon.OfferService
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+

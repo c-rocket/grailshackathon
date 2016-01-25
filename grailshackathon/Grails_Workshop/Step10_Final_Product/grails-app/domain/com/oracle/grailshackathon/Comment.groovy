@@ -7,18 +7,21 @@ class Comment {
 
 	static constraints = { id bindable: true }
 
+	static belongsTo = [
+		item:Item,
+		commentBy: Comment
+	]
+	
 	static mapping = {
 		table 'COMMENTS'
 		id column: 'COMMENT_ID', generator:'sequence', params:[sequence:'COMMENTS_COMMENT_ID_SEQ']
-		itemId column: 'ITEM_ID'
+		item column: 'ITEM_ID'
 		commentBy column: 'COMMENT_BY'
 		createDate column: 'COMMENT_CREATE_DATE'
 		text column: 'COMMENT_TEXT'
 		version false
 	}
 
-	Integer itemId
 	String text
 	Date createDate
-	Integer commentBy
 }

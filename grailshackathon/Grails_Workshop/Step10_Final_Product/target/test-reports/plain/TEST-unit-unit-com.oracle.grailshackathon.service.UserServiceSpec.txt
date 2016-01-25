@@ -1,5 +1,5 @@
 Testsuite: com.oracle.grailshackathon.service.UserServiceSpec
-Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.924 sec
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.588 sec
 ------------- Standard Output ---------------
 --Output from test change password - valid--
 --Output from test change password - invalid--
@@ -13,7 +13,7 @@ Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.924 sec
 --Output from test login - invalid--
 ------------- ---------------- ---------------
 
-Testcase: test change password - valid took 0.465 sec
-Testcase: test change password - invalid took 0.089 sec
-Testcase: test login - valid took 0.319 sec
-Testcase: test login - invalid took 0.043 sec
+Testcase: test change password - valid took 0.356 sec
+Testcase: test change password - invalid took 0.075 sec
+Testcase: test login - valid took 0.079 sec
+Testcase: test login - invalid took 0.067 sec

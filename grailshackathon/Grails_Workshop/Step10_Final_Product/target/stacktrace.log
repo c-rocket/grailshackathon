@@ -118,3 +118,968 @@ java.lang.LinkageError: loader (instance of  org/springsource/loaded/ChildClassL
 	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
 	at java.lang.ClassLoader.defineClass(ClassLoader.java:642)
 	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,481 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at org.springframework.security.crypto.codec.Utf8.encode(Utf8.java:24)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.digest(StandardPasswordEncoder.java:91)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.encode(StandardPasswordEncoder.java:85)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.encode(StandardPasswordEncoder.java:67)
+	at org.springframework.security.crypto.password.PasswordEncoder$encode.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UserService$_create_closure3.doCall(UserService.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at com.oracle.grailshackathon.UserService$_create_closure3.call(UserService.groovy)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at com.oracle.grailshackathon.UserService$_create_closure3.call(UserService.groovy)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.UserService.create(UserService.groovy)
+	at com.oracle.grailshackathon.UserService$create.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.grails.web.servlet.mvc.MixedGrailsControllerHelper.invoke(MixedGrailsControllerHelper.java:154)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleAction(AbstractGrailsControllerHelper.java:375)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.executeAction(AbstractGrailsControllerHelper.java:252)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:205)
+	at org.codehaus.groovy.grails.web.servlet.mvc.AbstractGrailsControllerHelper.handleURI(AbstractGrailsControllerHelper.java:126)
+	at org.codehaus.groovy.grails.web.servlet.mvc.SimpleGrailsController.handleRequest(SimpleGrailsController.java:72)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:50)
+	at org.codehaus.groovy.grails.web.servlet.GrailsDispatcherServlet.doDispatch(GrailsDispatcherServlet.java:347)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:748)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:486)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:411)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:338)
+	at org.codehaus.groovy.grails.web.mapping.UrlMappingUtils.forwardRequestForUrlMappingInfo(UrlMappingUtils.java:178)
+	at org.codehaus.groovy.grails.web.mapping.UrlMappingUtils.forwardRequestForUrlMappingInfo(UrlMappingUtils.java:144)
+	at org.codehaus.groovy.grails.web.mapping.UrlMappingUtils.forwardRequestForUrlMappingInfo(UrlMappingUtils.java:135)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:216)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1070)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,484 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,499 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,507 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,510 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:22:50,510 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UsersController.createUser(UsersController.groovy:19)
+	at grails.plugin.cache.web.filter.PageFragmentCachingFilter.doFilter(PageFragmentCachingFilter.java:198)
+	at grails.plugin.cache.web.filter.AbstractFilter.doFilter(AbstractFilter.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:22,631 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3202)
+	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3154)
+	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3097)
+	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1325)
+	at groovy.lang.MetaClassImpl.createPogoCallSite(MetaClassImpl.java:3358)
+	at groovy.lang.ExpandoMetaClass.createPogoCallSite(ExpandoMetaClass.java:1299)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPogoSite(CallSiteArray.java:147)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:161)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.plugins.DomainClassGrailsPlugin$_closure3.doCall(DomainClassGrailsPlugin.groovy:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1276)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:767)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:716)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:731)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:408)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher$2.run(GrailsProjectWatcher.java:246)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.firePendingClassChangeEvents(GrailsProjectWatcher.java:107)
+	at org.codehaus.groovy.grails.cli.agent.GrailsPluginManagerReloadPlugin.reloadEvent(GrailsPluginManagerReloadPlugin.java:42)
+	at org.springsource.loaded.TypeRegistry.fireReloadEvent(TypeRegistry.java:1794)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:417)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:22,695 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:22,710 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:22,711 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:23,952 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3202)
+	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3154)
+	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3097)
+	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1325)
+	at groovy.lang.MetaClassImpl.createPogoCallSite(MetaClassImpl.java:3358)
+	at groovy.lang.ExpandoMetaClass.createPogoCallSite(ExpandoMetaClass.java:1299)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPogoSite(CallSiteArray.java:147)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:161)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.plugins.DomainClassGrailsPlugin$_closure3.doCall(DomainClassGrailsPlugin.groovy:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1276)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:767)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:716)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:731)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:408)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher$2.run(GrailsProjectWatcher.java:246)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.firePendingClassChangeEvents(GrailsProjectWatcher.java:107)
+	at org.codehaus.groovy.grails.cli.agent.GrailsPluginManagerReloadPlugin.reloadEvent(GrailsPluginManagerReloadPlugin.java:42)
+	at org.springsource.loaded.TypeRegistry.fireReloadEvent(TypeRegistry.java:1794)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:417)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:23,968 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:23,968 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:23,968 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:40,600 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3202)
+	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3154)
+	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3097)
+	at groovy.lang.MetaClassImpl.getMethodWithCachingInternal(MetaClassImpl.java:1325)
+	at groovy.lang.MetaClassImpl.createPogoCallSite(MetaClassImpl.java:3358)
+	at groovy.lang.ExpandoMetaClass.createPogoCallSite(ExpandoMetaClass.java:1299)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createPogoSite(CallSiteArray.java:147)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallSite(CallSiteArray.java:161)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+	at org.codehaus.groovy.grails.plugins.DomainClassGrailsPlugin$_closure3.doCall(DomainClassGrailsPlugin.groovy:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1276)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:324)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1207)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1016)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:767)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:716)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:731)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:408)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher$2.run(GrailsProjectWatcher.java:246)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.firePendingClassChangeEvents(GrailsProjectWatcher.java:107)
+	at org.codehaus.groovy.grails.cli.agent.GrailsPluginManagerReloadPlugin.reloadEvent(GrailsPluginManagerReloadPlugin.java:42)
+	at org.springsource.loaded.TypeRegistry.fireReloadEvent(TypeRegistry.java:1794)
+	at org.springsource.loaded.ReloadableType.loadNewVersion(ReloadableType.java:417)
+	at org.springsource.loaded.TypeRegistry.loadNewVersion(TypeRegistry.java:845)
+	at org.springsource.loaded.agent.ReloadableFileChangeListener.fileChanged(ReloadableFileChangeListener.java:51)
+	at org.springsource.loaded.agent.Watcher.determineChangesSince(FileSystemWatcher.java:235)
+	at org.springsource.loaded.agent.Watcher.run(FileSystemWatcher.java:219)
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:40,600 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:40,601 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 14:53:40,601 [FileSystemWatcher: files=#4 cl=groovy.lang.GroovyClassLoader@5cde6c84] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method grails.spring.BeanBuilder#registerBeans.
+Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
+	[interface org.codehaus.groovy.grails.commons.spring.RuntimeSpringConfiguration]
+	[interface org.springframework.beans.factory.support.BeanDefinitionRegistry]
+	at java.lang.Thread.run(Thread.java:745)
+2016-01-25 15:07:50,446 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:50,472 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:50,483 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:50,486 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:50,540 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:50,547 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.getComments() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getComments(), newComment()
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test find comments for item(CommentsControllerSpec.groovy:28)
+2016-01-25 15:07:51,331 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,337 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,347 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,351 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,369 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,374 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.getItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getItem(), getItems(), getAt(java.lang.String), createItem(), deleteItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test get items by id(ItemsControllerSpec.groovy:38)
+2016-01-25 15:07:51,439 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,445 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,458 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,464 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,491 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,497 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.deleteItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: deleteItem(), createItem(), getItem(), updateItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test delete item(ItemsControllerSpec.groovy:48)
+2016-01-25 15:07:51,598 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:51,604 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:51,618 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:51,624 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:51,649 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:51,655 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.ItemsController.updateItem() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateItem(), createItem(), deleteItem(), getItem()
+	at com.oracle.grailshackathon.controller.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:70)
+2016-01-25 15:07:52,078 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,083 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,097 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,103 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,125 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,130 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.getOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: getOffers(), newOffer(), getErrors()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test find offers for item(OffersControllerSpec.groovy:28)
+2016-01-25 15:07:52,183 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,191 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,204 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,211 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,269 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,276 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 15:07:52,360 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,365 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,375 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,380 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,401 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,406 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.newOffer() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newOffer(), getOffers()
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test create offers(OffersControllerSpec.groovy:50)
+2016-01-25 15:07:52,874 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,878 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,884 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,887 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,899 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,902 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - valid(UsersControllerSpec.groovy:60)
+2016-01-25 15:07:52,940 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:52,943 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:52,949 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:52,952 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:52,964 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:52,968 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.UsersController.login() is applicable for argument types: (java.lang.String, java.lang.String) values: [email, password]
+Possible solutions: login(), notify(), wait(), find(), chain(java.util.Map)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:70)
+2016-01-25 15:07:54,654 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:07:54,668 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:07:54,712 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:07:54,713 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:07:54,713 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:07:54,713 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     null           false
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:null, ITEM_BOUGHT_BY:null, ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:37)
+2016-01-25 15:21:24,511 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:21:24,526 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:21:24,529 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:21:24,529 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:21:24,534 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:21:24,534 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+first.ITEM_POSTED_BY == 2
+|     |              |
+|     |              false
+|     com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR)
+[ITEM_ID:5, ITEM_TITLE:test title, ITEM_DESC:DESCRIPTION, ITEM_POST_DATE:null, ITEM_POSTED_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:GRAVATAR), ITEM_BOUGHT_BY:com.oracle.grailshackathon.User(username:null, password:null, email:null, gravatar:null), ITEM_PRICE:15, ITEM_STATUS:CLOSED]
+
+	at com.oracle.grailshackathon.service.ItemServiceSpec.test formating of item returned for find all(ItemServiceSpec.groovy:42)
+2016-01-25 15:49:45,370 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at org.springframework.security.crypto.codec.Utf8.encode(Utf8.java:24)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.digest(StandardPasswordEncoder.java:91)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.encode(StandardPasswordEncoder.java:85)
+	at org.springframework.security.crypto.password.StandardPasswordEncoder.encode(StandardPasswordEncoder.java:67)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.UserService.create_closure3(UserService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:49:45,374 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:49:45,376 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:49:45,376 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:49:45,381 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:49:45,381 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException
+	at java.nio.CharBuffer.wrap(CharBuffer.java:487)
+	at com.oracle.grailshackathon.UserService.$tt__create(UserService.groovy:49)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:23)
+2016-01-25 15:53:08,222 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.ItemService.create_closure3(ItemService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 15:53:08,224 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 15:53:08,226 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 15:53:08,226 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 15:53:08,230 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 15:53:08,230 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.NullPointerException: Cannot get property 'id' on null object
+	at com.oracle.grailshackathon.ItemService.$tt__create(ItemService.groovy:43)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.setup(CommentServiceIntegrationSpec.groovy:32)
+2016-01-25 16:03:35,175 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.codehaus.groovy.grails.commons.DefaultGrailsDomainClass.getPropertyByName(DefaultGrailsDomainClass.java:665)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractClausedStaticPersistentMethod$GrailsMethodExpression.setArguments(AbstractClausedStaticPersistentMethod.java:140)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractClausedStaticPersistentMethod.doInvokeInternal(AbstractClausedStaticPersistentMethod.java:518)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractClausedStaticPersistentMethod.doInvokeInternal(AbstractClausedStaticPersistentMethod.java:418)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractStaticPersistentMethod.invoke(AbstractStaticPersistentMethod.java:79)
+	at org.codehaus.groovy.grails.orm.hibernate.metaclass.AbstractStaticPersistentMethod.invoke(AbstractStaticPersistentMethod.java:72)
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentService.findCommentsForItem_closure1(CommentService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:03:35,178 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:03:35,179 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:03:35,180 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:03:35,184 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:03:35,184 [main] ERROR StackTrace  - Full Stack Trace:
+org.codehaus.groovy.grails.exceptions.InvalidPropertyException: No property found for name [itemId] for class [class com.oracle.grailshackathon.Comment]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:105)
+	at com.oracle.grailshackathon.CommentService.$tt__findCommentsForItem(CommentService.groovy:12)
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:47)
+2016-01-25 16:10:22,053 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:22,064 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:22,066 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:22,066 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:22,070 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:22,072 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:10:23,214 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferService.create_closure3(OfferService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:10:23,215 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:10:23,215 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:10:23,215 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:10:23,216 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:10:23,216 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:43)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:45,504 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:45,510 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:45,512 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:45,512 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:45,517 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:45,517 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+comments.size() == 1
+|        |      |
+[]       0      false
+
+	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
+2016-01-25 16:18:46,825 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferService.create_closure3(OfferService.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:439)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate$2.doInTransaction(GrailsTransactionTemplate.groovy:88)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:133)
+	at org.codehaus.groovy.grails.orm.support.GrailsTransactionTemplate.execute(GrailsTransactionTemplate.groovy:85)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:46,826 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:46,826 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:46,826 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:46,827 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
+2016-01-25 16:18:46,827 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
+	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
+	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)

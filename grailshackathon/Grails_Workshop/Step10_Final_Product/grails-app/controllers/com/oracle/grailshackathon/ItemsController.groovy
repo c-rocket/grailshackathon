@@ -10,12 +10,12 @@ class ItemsController {
 		render itemService.findAll() as JSON
 	}
 	
-	def getItem(def id){
-		render itemService.findById(id) as JSON
+	def getItem(){
+		render itemService.findById(params.id) as JSON
 	}
 
-	def deleteItem(def id){
-		render itemService.delete(id)
+	def deleteItem(){
+		render itemService.delete(params.id)
 	}
 
 	def createItem(){
@@ -23,8 +23,8 @@ class ItemsController {
 		render itemService.create(jsonObject) as JSON
 	}
 	
-	def updateItem(def id){
+	def updateItem(){
 		def jsonObject = request.JSON
-		render itemService.update(id,jsonObject) as JSON
+		render itemService.update(params.id,jsonObject) as JSON
 	}
 }

@@ -1,5 +1,5 @@
 Testsuite: com.oracle.grailshackathon.controller.ItemsControllerSpec
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2.273 sec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.604 sec
 ------------- Standard Output ---------------
 --Output from test get items--
 --Output from test get items by id--
@@ -15,8 +15,8 @@ Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 2.273 sec
 --Output from test update item--
 ------------- ---------------- ---------------
 
-Testcase: test get items took 1.06 sec
-Testcase: test get items by id took 0.269 sec
-Testcase: test delete item took 0.776 sec
-Testcase: test create item took 0.072 sec
-Testcase: test update item took 0.065 sec
+Testcase: test get items took 0.308 sec
+Testcase: test get items by id took 0.066 sec
+Testcase: test delete item took 0.071 sec
+Testcase: test create item took 0.058 sec
+Testcase: test update item took 0.063 sec

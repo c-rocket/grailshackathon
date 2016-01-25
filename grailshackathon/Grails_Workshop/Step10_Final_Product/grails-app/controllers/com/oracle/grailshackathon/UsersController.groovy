@@ -19,7 +19,7 @@ class UsersController {
 		render userService.create(jsonObject) as JSON
 	}
 
-	def login(def email, def password){
-		render userService.login(email,password) as JSON
+	def login(){
+		render userService.login(params.email,params.password) as JSON
 	}
 }

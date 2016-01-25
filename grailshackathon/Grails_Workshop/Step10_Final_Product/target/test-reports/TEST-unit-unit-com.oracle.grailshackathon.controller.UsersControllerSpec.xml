@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.UsersControllerSpec" tests="5" time="0.615" timestamp="2016-01-25T19:43:13">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.UsersControllerSpec" tests="5" time="0.576" timestamp="2016-01-25T23:18:06">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password good change" time="0.311" />
-  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password bad change" time="0.044" />
-  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test create user" time="0.054" />
-  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - valid" time="0.127" />
-  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - invalid" time="0.046" />
+  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password good change" time="0.379" />
+  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test change password bad change" time="0.029" />
+  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="test create user" time="0.048" />
+  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - valid" time="0.05" />
+  <testcase classname="com.oracle.grailshackathon.controller.UsersControllerSpec" name="login - invalid" time="0.043" />
   <system-out><![CDATA[--Output from test change password good change--
 --Output from test change password bad change--
 --Output from test create user--

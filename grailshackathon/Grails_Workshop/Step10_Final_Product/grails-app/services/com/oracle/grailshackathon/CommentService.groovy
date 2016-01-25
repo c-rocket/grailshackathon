@@ -6,26 +6,33 @@ import grails.transaction.Transactional
 class CommentService {
 
 	def findCommentsForItem(def itemId) {
-		Comment.findAllByItemId(itemId).collect{
+		def item = Item.findById(itemId)
+		Comment.findByItem(item).collect{
 			[
 				COMMENT_ID:it.id,
-				ITEM_ID:it.itemId,
-				COMMENT_BY:it.commentBy,
+				ITEM_ID:it.item?.id,
+				COMMENT_BY:it.commentBy?.id,
 				COMMENT_CREATE_DATE:it.createDate,
-				COMMENT_TEXT:it.text
+				COMMENT_TEXT:it.text,
+				USER_NAME:it.commentBy?.username,
+				USER_GRAVATAR:it.commentBy?.gravatar
 			]
 		}
 	}
 
 	def create(def jsonObject){
-		def comment = new Comment(itemId:jsonObject.p1,postedBy:jsonObject.p2,text:jsonObject.p3);
-		comment.save()
+		def commentBy = User.findById(jsonObject.p2)
+		def item = Item.findById(jsonObject.p1)
+		def comment = new Comment(item:item,commentBy:commentBy,text:jsonObject.p3);
+		comment.save(flush: true)
 		[
-			COMMENT_ID:comment.id,
-			ITEM_ID:comment.itemId,
-			COMMENT_BY:comment.commentBy,
+			COMMENT_ID:comment?.id,
+			ITEM_ID:comment.item?.id,
+			COMMENT_BY:comment.commentBy?.id,
 			COMMENT_CREATE_DATE:comment.createDate,
-			COMMENT_TEXT:comment.text
+			COMMENT_TEXT:comment.text,
+			USER_NAME:comment.commentBy?.username,
+			USER_GRAVATAR:comment.commentBy?.gravatar
 		]
 	}
 }

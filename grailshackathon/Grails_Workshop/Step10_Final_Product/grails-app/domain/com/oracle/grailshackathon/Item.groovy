@@ -7,6 +7,16 @@ class Item {
 
 	static constraints = { id bindable: true }
 
+	static hasMany = [
+		offers : Offer,
+		comments : Comment
+	]
+
+	static belongsTo = [
+		postedBy:User,
+		boughtBy:User
+	]
+
 	static mapping = {
 		table 'ITEMS'
 		id column: 'ITEM_ID', generator:'sequence', params:[sequence:'ITEMS_ITEM_ID_SEQ']
@@ -23,8 +33,6 @@ class Item {
 	String title
 	String description
 	Date postDate
-	Integer postedBy
-	Integer boughtBy
 	Integer price
 	String status
 }

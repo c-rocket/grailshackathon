@@ -7,10 +7,15 @@ class Offer {
 
 	static constraints = { id bindable: true }
 
+	static belongsTo = [
+		item:Item,
+		offerBy: User
+	]
+
 	static mapping = {
 		table 'OFFERS'
 		id column: 'OFFER_ID', generator:'sequence', params:[sequence:'OFFERS_OFFER_ID_SEQ']
-		itemId column: 'ITEM_ID'
+		item column: 'ITEM_ID'
 		offerBy column: 'OFFER_BY'
 		amount column: 'OFFER_AMOUNT'
 		createDate column: 'OFFER_CREATE_DATE'
@@ -18,8 +23,6 @@ class Offer {
 		version false
 	}
 
-	Integer itemId
-	Integer offerBy
 	Integer amount
 	String status
 	Date createDate
