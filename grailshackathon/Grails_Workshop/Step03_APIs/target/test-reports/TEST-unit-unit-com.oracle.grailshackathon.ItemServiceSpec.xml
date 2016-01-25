@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemServiceSpec" tests="1" time="1.311" timestamp="2016-01-23T15:46:58">
-  <properties />
-  <testcase classname="com.oracle.grailshackathon.ItemServiceSpec" name="test formating of item returned for find all" time="1.284" />
-  <system-out><![CDATA[--Output from test formating of item returned for find all--
-]]></system-out>
-  <system-err><![CDATA[--Output from test formating of item returned for find all--
-]]></system-err>
-</testsuite>

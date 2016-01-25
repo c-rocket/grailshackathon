@@ -5082,3 +5082,649 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 	at com.oracle.grailshackathon.ItemsController.updateItem(ItemsController.groovy:28)
 	at com.oracle.grailshackathon.ItemsControllerSpec.test update item(ItemsControllerSpec.groovy:69)
+2016-01-25 08:51:37,892 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:37,970 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:37,988 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:37,994 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:38,212 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:38,218 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:37)
+2016-01-25 08:51:41,516 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:41,523 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:41,537 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:41,543 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:41,572 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:41,579 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.OffersController.updateOffers() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: updateOffer(), updateOffer(java.lang.Object), getOffers()
+	at com.oracle.grailshackathon.OffersControllerSpec.test update offers(OffersControllerSpec.groovy:37)
+2016-01-25 08:51:42,119 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,121 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,123 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,125 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,130 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,132 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: offerService for class: com.oracle.grailshackathon.UsersController
+Possible solutions: userService
+	at com.oracle.grailshackathon.UsersControllerSpec.test change password good change(UsersControllerSpec.groovy:24)
+2016-01-25 08:51:42,327 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,328 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,330 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,331 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,333 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,334 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.UsersControllerSpec.test create user(UsersControllerSpec.groovy:46)
+2016-01-25 08:51:42,444 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.propertyMissing(ControllerTagLibraryApi.java:121)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 08:51:42,444 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 08:51:42,444 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 08:51:42,444 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 08:51:42,445 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 08:51:42,445 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.UsersControllerSpec.login(UsersControllerSpec.groovy:58)
+2016-01-25 09:13:19,663 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:97)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:19,681 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:19,691 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:19,697 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:19,729 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:19,735 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.CommentsController.newComment() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: newComment(), getComments(), getComments(java.lang.Object)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:13:20,886 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:20,888 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:20,894 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:20,896 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:20,907 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:20,921 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: OfferService9_groovyProxy.update() is applicable for argument types: (java.lang.Integer) values: [5]
+Possible solutions: update(java.lang.Object, java.lang.Object), update(java.lang.Object, java.lang.Object), create(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;), split(groovy.lang.Closure)
+	at com.oracle.grailshackathon.OffersController.updateOffer(OffersController.groovy:14)
+	at com.oracle.grailshackathon.controller.OffersControllerSpec.test update offer(OffersControllerSpec.groovy:39)
+2016-01-25 09:13:21,489 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,490 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,491 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,492 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,495 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,496 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: mock for class: com.oracle.grailshackathon.controller.UsersControllerSpec
+Possible solutions: model
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.test create user(UsersControllerSpec.groovy:48)
+2016-01-25 09:13:21,601 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.propertyMissing(ControllerTagLibraryApi.java:121)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:21,602 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:21,603 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:21,604 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:21,608 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:21,608 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: email for class: com.oracle.grailshackathon.UsersController
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login(UsersControllerSpec.groovy:60)
+2016-01-25 09:13:26,675 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,677 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,678 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,678 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,679 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,679 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:13:26,906 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:13:26,907 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:13:26,907 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:13:26,907 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:13:26,908 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:13:26,908 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6a16a145f22d1436692a3788a9a4cda8d606338e9ac99a5ecf81952c8b99d6760c893b974d3a92ae
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:28,987 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:28,998 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:29,018 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:29,023 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:29,048 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:29,052 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.oracle.grailshackathon.controller.CommentsControllerSpec$_$spock_feature_0_1_closure2.doCall() is applicable for argument types: (org.codehaus.groovy.grails.web.json.JSONObject) values: [[:]]
+Possible solutions: doCall(), call(), call([Ljava.lang.Object;), call(java.lang.Object), findAll(), equals(java.lang.Object)
+	at com.oracle.grailshackathon.CommentsController.newComment(CommentsController.groovy:15)
+	at com.oracle.grailshackathon.controller.CommentsControllerSpec.test create comment(CommentsControllerSpec.groovy:39)
+2016-01-25 09:21:31,121 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:31,124 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:31,125 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:31,125 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:31,125 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:31,126 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+response.text == null
+|        |    |
+|        {}   false
+org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@352f6727
+
+	at com.oracle.grailshackathon.controller.UsersControllerSpec.login - invalid(UsersControllerSpec.groovy:73)
+2016-01-25 09:21:35,832 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:35,835 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:35,835 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:35,836 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:35,836 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:35,836 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:21:36,055 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:36,055 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:36,056 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:36,056 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:36,056 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:21:36,056 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  6dbe93acf211d1d239720ba388df201a1179bfd1eb4baa3e9b4bae55e706fca86d405b3d77929540
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,786 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,790 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,793 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,794 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,799 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,799 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+changed == true
+|       |
+false   false
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test change password - valid(UserServiceSpec.groovy:45)
+2016-01-25 09:27:18,987 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,987 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,988 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,988 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,988 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:27:18,988 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+null      false          Test.user@oracle.com  a296067e31a013fc97b91f37560a38a202973a5c96f5a1b15e29e8f4452eebf90654fef718caa7b5
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,075 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,083 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,085 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,087 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,126 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+2016-01-25 09:44:31,127 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)

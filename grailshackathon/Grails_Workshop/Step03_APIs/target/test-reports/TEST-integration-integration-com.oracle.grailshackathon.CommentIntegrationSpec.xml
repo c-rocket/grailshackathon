@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.CommentIntegrationSpec" tests="1" time="0.779" timestamp="2016-01-23T15:47:32">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.CommentIntegrationSpec" tests="1" time="0.7" timestamp="2016-01-25T16:45:05">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.CommentIntegrationSpec" name="test that items are returned" time="0.756" />
+  <testcase classname="com.oracle.grailshackathon.CommentIntegrationSpec" name="test that items are returned" time="0.682" />
   <system-out><![CDATA[--Output from test that items are returned--
 ]]></system-out>
   <system-err><![CDATA[--Output from test that items are returned--

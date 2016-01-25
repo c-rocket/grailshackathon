@@ -1,0 +1,5 @@
+--Output from test change password good change--
+--Output from test change password bad change--
+--Output from test create user--
+--Output from login - valid--
+--Output from login - invalid--

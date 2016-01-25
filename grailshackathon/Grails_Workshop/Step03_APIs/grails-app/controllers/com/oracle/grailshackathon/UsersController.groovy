@@ -9,7 +9,7 @@ class UsersController {
 	def changePassword(){
 		def jsonObject = request.JSON
 		if(userService.changePassword(jsonObject.email,jsonObject.oldpw,jsonObject.newpw))
-			render true as JSON
+			render true
 		else
 			response.status = 404;
 	}

@@ -10,8 +10,9 @@ class OffersController {
 		render offerService.findOffersForItem(id) as JSON
 	}
 	
-	def updateOffers(def id){
-		render offerService.update(id) as JSON
+	def updateOffer(def id){
+		def jsonObject = request.JSON
+		render offerService.update(id,jsonObject) as JSON
 	}
 	
 	def newOffer(def id){

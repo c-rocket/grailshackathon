@@ -1,6 +1,7 @@
-package com.oracle.grailshackathon
+package com.oracle.grailshackathon.controller
 
 import com.oracle.grailshackathon.Item;
+import com.oracle.grailshackathon.ItemService;
 import com.oracle.grailshackathon.ItemsController;
 
 import spock.lang.Specification

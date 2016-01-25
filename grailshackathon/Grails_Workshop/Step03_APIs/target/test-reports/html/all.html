@@ -15,10 +15,12 @@
      - All tests </h1>
 <p class="intro">
                         Executed
-                        10
+                        24
                         tests
                     
-                        without a single error or failure!
+                        with
+                        one failure
+                        .
                     </p>
 </div>
 <div class="grid_2 omega">
@@ -41,6 +43,100 @@
 </nav>
 </div>
 <div class="clear"></div>
+<div class="testsuite failure">
+<div class="header">
+<h2>UserServiceSpec</h2>
+<h3>
+                        Executed
+                        4
+                        tests
+                    
+                        with
+                        one failure
+                        .
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password - valid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test change password - valid</b>
+</p>
+<p class="summary">Executed in 0.492 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password - invalid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test change password - invalid</b>
+</p>
+<p class="summary">Executed in 0.087 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix failure grid_8 alpha omega" data-name="test login - valid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon failure"></span><b class="testname message failure">test login - valid</b>
+</p>
+<p class="summary">Executed in 0.158 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo">
+<div class="details">
+<p>
+<b class="message">Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+</b>
+</p>
+<pre>junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,"USER_PASSWORD":passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test login - invalid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test login - invalid</b>
+</p>
+<p class="summary">Executed in 0.061 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
 <div class="testsuite success">
 <div class="header">
 <h2>CommentIntegrationSpec</h2>
@@ -55,7 +151,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.756 seconds.</p>
+<p class="summary">Executed in 0.682 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -76,6 +172,53 @@
 </div>
 <div class="testsuite success">
 <div class="header">
+<h2>CommentsControllerSpec</h2>
+<h3>
+                        Executed
+                        2
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test find comments for item">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test find comments for item</b>
+</p>
+<p class="summary">Executed in 7.462 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test create comment">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test create comment</b>
+</p>
+<p class="summary">Executed in 0.073 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test find comments for item--
+--Output from test create comment--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test find comments for item--
+--Output from test create comment--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
 <h2>ItemIntegrationSpec</h2>
 <h3>
                         A single test executed
@@ -88,7 +231,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.295 seconds.</p>
+<p class="summary">Executed in 0.316 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -123,7 +266,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test get items</b>
 </p>
-<p class="summary">Executed in 6.818 seconds.</p>
+<p class="summary">Executed in 0.358 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -133,7 +276,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test get items by id</b>
 </p>
-<p class="summary">Executed in 0.06 seconds.</p>
+<p class="summary">Executed in 0.056 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -143,7 +286,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test delete item</b>
 </p>
-<p class="summary">Executed in 0.046 seconds.</p>
+<p class="summary">Executed in 0.058 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -153,7 +296,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test create item</b>
 </p>
-<p class="summary">Executed in 0.05 seconds.</p>
+<p class="summary">Executed in 0.055 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -163,7 +306,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test update item</b>
 </p>
-<p class="summary">Executed in 0.076 seconds.</p>
+<p class="summary">Executed in 0.052 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -204,7 +347,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test formating of item returned for find all</b>
 </p>
-<p class="summary">Executed in 1.284 seconds.</p>
+<p class="summary">Executed in 1.66 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -237,7 +380,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.307 seconds.</p>
+<p class="summary">Executed in 0.308 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -258,6 +401,65 @@
 </div>
 <div class="testsuite success">
 <div class="header">
+<h2>OffersControllerSpec</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test find offers for item">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test find offers for item</b>
+</p>
+<p class="summary">Executed in 0.376 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test update offer">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test update offer</b>
+</p>
+<p class="summary">Executed in 0.049 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test create offers">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test create offers</b>
+</p>
+<p class="summary">Executed in 0.053 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test find offers for item--
+--Output from test update offer--
+--Output from test create offers--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test find offers for item--
+--Output from test update offer--
+--Output from test create offers--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
 <h2>UserIntegrationSpec</h2>
 <h3>
                         A single test executed
@@ -270,7 +472,7 @@
 <p>
 <span class="icon success"></span><b class="testname message success">test that items are returned</b>
 </p>
-<p class="summary">Executed in 0.306 seconds.</p>
+<p class="summary">Executed in 0.292 seconds.</p>
 </div>
 <div class="grid_5 omega outputinfo"></div>
 <div class="clear"></div>
@@ -284,6 +486,89 @@
 <div class="syserr">
 <h2>System error</h2>
 <pre class="syserr">--Output from test that items are returned--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>UsersControllerSpec</h2>
+<h3>
+                        Executed
+                        5
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password good change">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test change password good change</b>
+</p>
+<p class="summary">Executed in 0.546 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test change password bad change">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test change password bad change</b>
+</p>
+<p class="summary">Executed in 0.044 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="test create user">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">test create user</b>
+</p>
+<p class="summary">Executed in 0.062 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="login - valid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">login - valid</b>
+</p>
+<p class="summary">Executed in 0.055 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="login - invalid">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">login - invalid</b>
+</p>
+<p class="summary">Executed in 0.049 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from test change password good change--
+--Output from test change password bad change--
+--Output from test create user--
+--Output from login - valid--
+--Output from login - invalid--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from test change password good change--
+--Output from test change password bad change--
+--Output from test create user--
+--Output from login - valid--
+--Output from login - invalid--
 </pre>
 </div>
 </div>

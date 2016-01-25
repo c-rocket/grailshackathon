@@ -1,5 +1,6 @@
-package com.oracle.grailshackathon
+package com.oracle.grailshackathon.service
 
+import com.oracle.grailshackathon.Item;
 import com.oracle.grailshackathon.ItemService;
 
 import grails.test.mixin.TestFor

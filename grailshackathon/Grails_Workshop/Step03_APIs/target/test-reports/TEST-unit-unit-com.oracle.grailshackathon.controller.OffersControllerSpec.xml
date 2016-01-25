@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.OffersControllerSpec" tests="3" time="0.506" timestamp="2016-01-25T16:44:27">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test find offers for item" time="0.376" />
+  <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test update offer" time="0.049" />
+  <testcase classname="com.oracle.grailshackathon.controller.OffersControllerSpec" name="test create offers" time="0.053" />
+  <system-out><![CDATA[--Output from test find offers for item--
+--Output from test update offer--
+--Output from test create offers--
+]]></system-out>
+  <system-err><![CDATA[--Output from test find offers for item--
+--Output from test update offer--
+--Output from test create offers--
+]]></system-err>
+</testsuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="1" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.service.UserServiceSpec" tests="4" time="0.806" timestamp="2016-01-25T16:44:30">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.492" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.087" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.158">
+    <failure message="Condition not satisfied:&#xa;&#xa;validUser == [USER_EMAIL:email,&quot;USER_PASSWORD&quot;:passwordHash]&#xa;|         |              |                     |&#xa;|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67&#xa;[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
+
+validUser == [USER_EMAIL:email,&quot;USER_PASSWORD&quot;:passwordHash]
+|         |              |                     |
+|         false          Test.user@oracle.com  4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67
+[OFFER_ID:null, USER_NAME:null, USER_PASSWORD:4fae2c47e29a5ee89c789ee244a351b869fa4cc0b3b5b981ef1132697c66bf8f6d4b04ee397c9b67, USER_EMAIL:Test.user@oracle.com, USER_GRAVATAR:null]
+
+	at com.oracle.grailshackathon.service.UserServiceSpec.test login - valid(UserServiceSpec.groovy:82)
+</failure>
+  </testcase>
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.061" />
+  <system-out><![CDATA[--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+]]></system-out>
+  <system-err><![CDATA[--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+]]></system-err>
+</testsuite>

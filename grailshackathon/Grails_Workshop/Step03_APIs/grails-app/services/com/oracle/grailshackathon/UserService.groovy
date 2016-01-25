@@ -14,8 +14,7 @@ class UserService {
 		def user = User.findByEmail(email)
 
 		try{
-			if(encoder.matches(oldpw, user.email)){
-				user.email = email
+			if(user && encoder.matches(oldpw, user.password)){
 				user.password = newHash
 				user.save()
 				return true
@@ -28,10 +27,16 @@ class UserService {
 
 	def login(def email, def password){
 		StandardPasswordEncoder encoder = new StandardPasswordEncoder(KEY);
-		def user = User.findByEmail(email);
+		def user = User.findByEmail(email)
 		try {
 			if (user && encoder.matches(password, user.password)) {
-				return user;
+				return [
+					USER_ID:user.id,
+					USER_NAME:user.username,
+					USER_PASSWORD:user.password,
+					USER_EMAIL:user.email,
+					USER_GRAVATAR:user.gravatar
+				]
 			}
 		} catch (Exception e) {
 			e.printStackTrace()
@@ -47,11 +52,11 @@ class UserService {
 		def user = new User(username:jsonObject.username,email:jsonObject.email,password:hash, gravatar: gravatar);
 		user.save()
 		[
-			OFFER_ID:it.id,
-			USER_NAME:it.username,
-			USER_PASSWORD:it.password,
-			USER_EMAIL:it.email,
-			USER_GRAVATAR:it.gravatar
+			USER_ID:user.id,
+			USER_NAME:user.username,
+			USER_PASSWORD:user.password,
+			USER_EMAIL:user.email,
+			USER_GRAVATAR:user.gravatar
 		]
 	}
 }
