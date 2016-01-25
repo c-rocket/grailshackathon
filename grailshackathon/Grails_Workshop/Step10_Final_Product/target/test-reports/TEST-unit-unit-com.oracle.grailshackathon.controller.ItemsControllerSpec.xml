@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.ItemsControllerSpec" tests="5" time="2.273" timestamp="2016-01-25T19:43:10">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items" time="1.06" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items by id" time="0.269" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test delete item" time="0.773" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test create item" time="0.071" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test update item" time="0.065" />
+  <system-out><![CDATA[--Output from test get items--
+--Output from test get items by id--
+--Output from test delete item--
+--Output from test create item--
+--Output from test update item--
+]]></system-out>
+  <system-err><![CDATA[--Output from test get items--
+--Output from test get items by id--
+--Output from test delete item--
+--Output from test create item--
+--Output from test update item--
+]]></system-err>
+</testsuite>

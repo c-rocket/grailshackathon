@@ -1,0 +1,22 @@
+Testsuite: com.oracle.grailshackathon.controller.UsersControllerSpec
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.615 sec
+------------- Standard Output ---------------
+--Output from test change password good change--
+--Output from test change password bad change--
+--Output from test create user--
+--Output from login - valid--
+--Output from login - invalid--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test change password good change--
+--Output from test change password bad change--
+--Output from test create user--
+--Output from login - valid--
+--Output from login - invalid--
+------------- ---------------- ---------------
+
+Testcase: test change password good change took 0.311 sec
+Testcase: test change password bad change took 0.044 sec
+Testcase: test create user took 0.054 sec
+Testcase: login - valid took 0.127 sec
+Testcase: login - invalid took 0.046 sec

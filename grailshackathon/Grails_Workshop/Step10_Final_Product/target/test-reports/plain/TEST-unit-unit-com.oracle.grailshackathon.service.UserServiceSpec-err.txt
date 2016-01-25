@@ -1,0 +1,4 @@
+--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--

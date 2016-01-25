@@ -1,0 +1,10 @@
+Testsuite: com.oracle.grailshackathon.service.ItemServiceSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.399 sec
+------------- Standard Output ---------------
+--Output from test formating of item returned for find all--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test formating of item returned for find all--
+------------- ---------------- ---------------
+
+Testcase: test formating of item returned for find all took 1.37 sec

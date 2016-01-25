@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.service.UserServiceSpec" tests="4" time="0.924" timestamp="2016-01-25T19:43:15">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.465" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.089" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.319" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.043" />
+  <system-out><![CDATA[--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+]]></system-out>
+  <system-err><![CDATA[--Output from test change password - valid--
+--Output from test change password - invalid--
+--Output from test login - valid--
+--Output from test login - invalid--
+]]></system-err>
+</testsuite>

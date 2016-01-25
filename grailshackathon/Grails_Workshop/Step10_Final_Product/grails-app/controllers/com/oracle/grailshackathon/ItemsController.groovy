@@ -14,7 +14,7 @@ class ItemsController {
 		render itemService.findById(id) as JSON
 	}
 
-	def deleteItem(BigDecimal id){
+	def deleteItem(def id){
 		render itemService.delete(id)
 	}
 

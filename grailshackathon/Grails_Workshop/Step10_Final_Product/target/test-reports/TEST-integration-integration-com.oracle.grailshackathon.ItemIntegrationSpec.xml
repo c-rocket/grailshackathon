@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.ItemIntegrationSpec" tests="1" time="0.327" timestamp="2016-01-25T19:43:56">
+  <properties />
+  <testcase classname="com.oracle.grailshackathon.ItemIntegrationSpec" name="test that items are returned" time="0.307" />
+  <system-out><![CDATA[--Output from test that items are returned--
+]]></system-out>
+  <system-err><![CDATA[--Output from test that items are returned--
+]]></system-err>
+</testsuite>
