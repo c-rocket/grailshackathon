@@ -7,7 +7,7 @@ class CommentService {
 
 	def findCommentsForItem(def itemId) {
 		def item = Item.findById(itemId)
-		Comment.findByItem(item).collect{
+		Comment.findAllByItem(item).collect{
 			[
 				COMMENT_ID:it.id,
 				ITEM_ID:it.item?.id,
@@ -23,8 +23,8 @@ class CommentService {
 	def create(def jsonObject){
 		def commentBy = User.findById(jsonObject.p2)
 		def item = Item.findById(jsonObject.p1)
-		def comment = new Comment(item:item,commentBy:commentBy,text:jsonObject.p3);
-		comment.save(flush: true)
+		def comment = new Comment(item:item,commentBy:commentBy,text:jsonObject.p3, createDate:new Date());
+		comment.save(flush: true,failOnError: true)
 		[
 			COMMENT_ID:comment?.id,
 			ITEM_ID:comment.item?.id,

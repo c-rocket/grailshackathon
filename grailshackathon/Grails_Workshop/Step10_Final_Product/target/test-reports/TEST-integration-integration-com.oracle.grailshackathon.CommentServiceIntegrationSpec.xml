@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.CommentServiceIntegrationSpec" tests="1" time="1.39" timestamp="2016-01-25T23:18:44">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.CommentServiceIntegrationSpec" tests="1" time="1.716" timestamp="2016-01-26T05:40:55">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.CommentServiceIntegrationSpec" name="Test Find Comments for Item" time="1.372">
-    <failure message="Condition not satisfied:&#xa;&#xa;comments.size() == 1&#xa;|        |      |&#xa;[]       0      false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
-
-comments.size() == 1
-|        |      |
-[]       0      false
-
-	at com.oracle.grailshackathon.CommentServiceIntegrationSpec.Test Find Comments for Item(CommentServiceIntegrationSpec.groovy:49)
-</failure>
-  </testcase>
+  <testcase classname="com.oracle.grailshackathon.CommentServiceIntegrationSpec" name="Test Find Comments for Item" time="1.697" />
   <system-out><![CDATA[--Output from Test Find Comments for Item--
 ]]></system-out>
   <system-err><![CDATA[--Output from Test Find Comments for Item--

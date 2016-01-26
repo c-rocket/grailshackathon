@@ -16,7 +16,7 @@ class UserService {
 		try{
 			if(user && encoder.matches(oldpw, user.password)){
 				user.password = newHash
-				user.save(flush: true)
+				user.save(flush: true,failOnError: true)
 				return true
 			}
 		}catch (Exception e){
@@ -50,7 +50,7 @@ class UserService {
 		String gravatar = Gravatar.url(jsonObject.email);
 
 		def user = new User(username:jsonObject.username,email:jsonObject.email,password:hash, gravatar: gravatar);
-		user.save(flush: true)
+		user.save(flush: true,failOnError: true)
 		[
 			USER_ID:user.id,
 			USER_NAME:user.username,

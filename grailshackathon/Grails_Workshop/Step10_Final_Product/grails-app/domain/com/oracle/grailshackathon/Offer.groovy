@@ -5,7 +5,11 @@ import groovy.transform.ToString;
 @ToString(includeNames = true, includeFields = true, excludes = "metaClass,class")
 class Offer {
 
-	static constraints = { id bindable: true }
+	static constraints = {
+		id bindable: true
+		createDate nullable:true
+		status nullable:true
+	}
 
 	static belongsTo = [
 		item:Item,

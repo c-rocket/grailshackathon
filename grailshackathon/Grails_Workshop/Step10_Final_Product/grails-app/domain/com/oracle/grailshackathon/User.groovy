@@ -5,7 +5,11 @@ import groovy.transform.ToString;
 @ToString(includeNames = true, includeFields = true, excludes = "metaClass,class")
 class User {
 
-	static constraints = { id bindable: true }
+	static constraints = {
+		id bindable: true
+		password nullable: true
+		gravatar nullable: true
+	}
 
 	static mapping = {
 		table 'USERS'

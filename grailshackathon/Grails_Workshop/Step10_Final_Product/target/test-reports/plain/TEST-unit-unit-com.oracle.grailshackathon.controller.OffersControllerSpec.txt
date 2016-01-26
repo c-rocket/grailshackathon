@@ -1,5 +1,5 @@
 Testsuite: com.oracle.grailshackathon.controller.OffersControllerSpec
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.579 sec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.448 sec
 ------------- Standard Output ---------------
 --Output from test find offers for item--
 --Output from test update offer--
@@ -11,6 +11,6 @@ Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.579 sec
 --Output from test create offers--
 ------------- ---------------- ---------------
 
-Testcase: test find offers for item took 0.369 sec
-Testcase: test update offer took 0.057 sec
-Testcase: test create offers took 0.125 sec
+Testcase: test find offers for item took 0.284 sec
+Testcase: test update offer took 0.072 sec
+Testcase: test create offers took 0.065 sec

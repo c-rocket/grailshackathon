@@ -35,7 +35,7 @@ class UserServiceSpec extends Specification {
 
 		String oldHash = encoder.encode(oldpw)
 
-		def user = new User(password:oldHash,email:email)
+		def user = new User(password:oldHash,email:email,username:'ABC 123')
 		User.metaClass.'static'.findByEmail = {em->return user}
 
 		// execute

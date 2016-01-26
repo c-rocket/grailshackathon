@@ -1,5 +1,5 @@
 Testsuite: com.oracle.grailshackathon.controller.CommentsControllerSpec
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 15.54 sec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 10.665 sec
 ------------- Standard Output ---------------
 --Output from test find comments for item--
 --Output from test create comment--
@@ -9,5 +9,5 @@ Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 15.54 sec
 --Output from test create comment--
 ------------- ---------------- ---------------
 
-Testcase: test find comments for item took 15.36 sec
-Testcase: test create comment took 0.08 sec
+Testcase: test find comments for item took 10.515 sec
+Testcase: test create comment took 0.076 sec

@@ -38,8 +38,8 @@ class ItemService {
 
 	def create(def jsonObject){
 		def postedBy = User.findById(jsonObject.p3)
-		def item = new Item(title:jsonObject.p1,description:jsonObject.p2,postedBy:postedBy,status:jsonObject.p4,price:jsonObject.p5);
-		item.save(flush: true)
+		def item = new Item(title:jsonObject.p1,description:jsonObject.p2,postedBy:postedBy,status:jsonObject.p4,price:jsonObject.p5, , postDate:new Date());
+		item.save(flush: true,failOnError: true)
 		[
 			ITEM_ID:item.id,
 			ITEM_TITLE:item.title,
@@ -61,7 +61,7 @@ class ItemService {
 		item.status = jsonObject.p5
 		item.price = jsonObject.p4
 		item.boughtBy = purchasedBy
-		item.save(flush: true)
+		item.save(flush: true,failOnError: true)
 		[
 			ITEM_ID:item.id,
 			ITEM_TITLE:item.title,

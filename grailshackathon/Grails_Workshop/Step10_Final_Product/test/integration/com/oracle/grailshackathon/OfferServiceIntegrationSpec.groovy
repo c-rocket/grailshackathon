@@ -11,10 +11,17 @@ class OfferServiceIntegrationSpec extends IntegrationSpec {
 	def userService
 	def itemService
 
-	def userId
-	def itemId
-
 	def setup() {
+		
+	}
+
+	def cleanup() {
+	}
+
+	void "Test Find Offer for Item"() {
+		when:
+		def userId
+		def itemId
 		def userJson = [
 			username:"test user",
 			email:"test@user.com",
@@ -30,13 +37,6 @@ class OfferServiceIntegrationSpec extends IntegrationSpec {
 			p5:15
 		]
 		itemId = itemService.create(itemJson).ITEM_ID
-	}
-
-	def cleanup() {
-	}
-
-	void "Test Find Offer for Item"() {
-		when:
 		def json = [
 			p1:itemId,
 			p2:userId,
@@ -47,9 +47,10 @@ class OfferServiceIntegrationSpec extends IntegrationSpec {
 
 		then:
 		offers.size() == 1
-		offers.ITEM_ID == itemId
-		offers.OFFER_BY == userId
-		offers.OFFER_AMOUNT != null
-		offers.OFFER_STATUS == "OPEN"
+		def offer = offers.getAt(0)
+		offer.ITEM_ID == itemId 
+		offer.OFFER_BY == userId 
+		offer.OFFER_AMOUNT != null
+		offer.OFFER_STATUS == null
 	}
 }

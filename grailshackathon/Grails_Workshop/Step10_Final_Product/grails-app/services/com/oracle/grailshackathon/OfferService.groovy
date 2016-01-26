@@ -6,11 +6,8 @@ import grails.transaction.Transactional
 class OfferService {
 
 	def findOffersForItem(def itemId) {
-		Offer.createCriteria().list {
-			item{
-				eq('id',itemId)
-			}
-		}.collect{
+		def item = Item.findById(itemId)
+		Offer.findAllByItem(item).collect{
 			[
 				OFFER_ID:it.id,
 				ITEM_ID:it.item?.id,
@@ -25,7 +22,7 @@ class OfferService {
 	def update(def id, def jsonObject){
 		def offer = Offer.findById(id)
 		offer.status = jsonObject.p1
-		offer.save(flush: true)
+		offer.save(flush: true,failOnError: true)
 		[
 			OFFER_ID:it.id,
 			ITEM_ID:it.item?.id,
@@ -39,15 +36,15 @@ class OfferService {
 	def create(def jsonObject){
 		def item = Item.findById(jsonObject.p1)
 		def offerBy = User.findById(jsonObject.p2)
-		def offer = new Offer(itemId:item,offerBy:offerBy,amount:jsonObject.p3);
-		offer.save(flush: true)
+		def offer = new Offer(item:item,offerBy:offerBy,amount:jsonObject.p3);
+		offer.save(flush: true,failOnError: true)
 		[
-			OFFER_ID:it.id,
-			ITEM_ID:it.item?.id,
-			OFFER_BY:it.offerBy?.id,
-			OFFER_AMOUNT:it.amount,
-			OFFER_CREATE_DATE:it.createDate,
-			OFFER_STATUS:it.status
+			OFFER_ID:offer.id,
+			ITEM_ID:offer.item?.id,
+			OFFER_BY:offer.offerBy?.id,
+			OFFER_AMOUNT:offer.amount,
+			OFFER_CREATE_DATE:offer.createDate,
+			OFFER_STATUS:offer.status
 		]
 	}
 }

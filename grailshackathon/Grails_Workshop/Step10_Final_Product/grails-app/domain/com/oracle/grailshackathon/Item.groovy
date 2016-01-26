@@ -5,7 +5,12 @@ import groovy.transform.ToString;
 @ToString(includeNames = true, includeFields = true, excludes = "metaClass,class")
 class Item {
 
-	static constraints = { id bindable: true }
+	static constraints = {
+		id bindable: true
+		postedBy nullable: true
+		boughtBy nullable: true
+		status nullable: true
+	}
 
 	static hasMany = [
 		offers : Offer,
@@ -13,8 +18,7 @@ class Item {
 	]
 
 	static belongsTo = [
-		postedBy:User,
-		boughtBy:User
+		postedBy:User
 	]
 
 	static mapping = {
@@ -30,6 +34,7 @@ class Item {
 		version false
 	}
 
+	User boughtBy
 	String title
 	String description
 	Date postDate

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.ItemsControllerSpec" tests="5" time="0.604" timestamp="2016-01-25T23:18:05">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.controller.ItemsControllerSpec" tests="5" time="0.633" timestamp="2016-01-26T05:40:15">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items" time="0.308" />
-  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items by id" time="0.066" />
-  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test delete item" time="0.071" />
-  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test create item" time="0.058" />
-  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test update item" time="0.063" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items" time="0.353" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test get items by id" time="0.084" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test delete item" time="0.066" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test create item" time="0.06" />
+  <testcase classname="com.oracle.grailshackathon.controller.ItemsControllerSpec" name="test update item" time="0.055" />
   <system-out><![CDATA[--Output from test get items--
 --Output from test get items by id--
 --Output from test delete item--

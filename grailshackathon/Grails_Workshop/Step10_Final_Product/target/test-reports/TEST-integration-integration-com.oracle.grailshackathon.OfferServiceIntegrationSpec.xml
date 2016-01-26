@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.OfferServiceIntegrationSpec" tests="1" time="0.624" timestamp="2016-01-25T23:18:46">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.OfferServiceIntegrationSpec" tests="1" time="1.234" timestamp="2016-01-26T05:40:57">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.OfferServiceIntegrationSpec" name="Test Find Offer for Item" time="0.609">
-    <error message="No such property: it for class: com.oracle.grailshackathon.OfferService" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: it for class: com.oracle.grailshackathon.OfferService
-	at com.oracle.grailshackathon.OfferService.$tt__create(OfferService.groovy:44)
-	at com.oracle.grailshackathon.OfferServiceIntegrationSpec.Test Find Offer for Item(OfferServiceIntegrationSpec.groovy:45)
-</error>
-  </testcase>
+  <testcase classname="com.oracle.grailshackathon.OfferServiceIntegrationSpec" name="Test Find Offer for Item" time="1.224" />
   <system-out><![CDATA[--Output from Test Find Offer for Item--
 ]]></system-out>
   <system-err><![CDATA[--Output from Test Find Offer for Item--

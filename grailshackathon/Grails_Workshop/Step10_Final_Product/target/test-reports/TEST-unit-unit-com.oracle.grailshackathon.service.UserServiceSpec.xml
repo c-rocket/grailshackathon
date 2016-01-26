@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.service.UserServiceSpec" tests="4" time="0.588" timestamp="2016-01-25T23:18:08">
+<testsuite errors="0" failures="0" hostname="CCROCKET-LAP" name="com.oracle.grailshackathon.service.UserServiceSpec" tests="4" time="0.868" timestamp="2016-01-26T05:40:18">
   <properties />
-  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.356" />
-  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.075" />
-  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.079" />
-  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.067" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - valid" time="0.658" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test change password - invalid" time="0.071" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - valid" time="0.075" />
+  <testcase classname="com.oracle.grailshackathon.service.UserServiceSpec" name="test login - invalid" time="0.054" />
   <system-out><![CDATA[--Output from test change password - valid--
 --Output from test change password - invalid--
 --Output from test login - valid--

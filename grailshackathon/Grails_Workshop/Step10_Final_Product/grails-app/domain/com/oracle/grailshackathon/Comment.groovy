@@ -9,7 +9,7 @@ class Comment {
 
 	static belongsTo = [
 		item:Item,
-		commentBy: Comment
+		commentBy: User
 	]
 	
 	static mapping = {
@@ -21,7 +21,7 @@ class Comment {
 		text column: 'COMMENT_TEXT'
 		version false
 	}
-
+	
 	String text
 	Date createDate
 }
